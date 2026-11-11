@@ -1,0 +1,1235 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="description" content="特定社会保険労務士試験（紛争解決手続代理業務試験）対策。情報漏えい・SNS投稿・カスハラの3題を、動画・音声・スライドで予習し、答案を書いて解答例と見比べる練習帳。">
+<style>:root{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}body{margin:0}img{max-width:100%}[hidden]{display:none!important}</style>
+<title>特定社労士 答案練習帳 3区間の軌跡</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=Shippori+Mincho+B1:wght@600;800&family=Zen+Kaku+Gothic+New:wght@400;500;700&display=swap">
+<style>
+/* Layout: 駅伝のコース。紙の上に藍の文字、斜めに走るタスキの橙。見る→聞く→めくる→書くの順に区間をつなぎ、最後に答案を書く */
+:root{
+  --paper:#F3F5F8;
+  --surface:#FFFFFF;
+  --ink:#16203B;
+  --ink-2:#222E52;
+  --ink-soft:#4A536B;
+  --rule:#D6DBE5;
+  --ai:#2B3F7A;
+  --ai-tint:#E8ECF5;
+  --taski:#E8681A;
+  --taski-ink:#A8440F;
+  --taski-tint:#FCEDE2;
+  --taski-light:#F59A5C;
+  --on-ink:#F3F5F8;
+  --on-ink-soft:#B3BBCF;
+  --shu:var(--taski-ink);
+  --shu-tint:var(--taski-tint);
+  --display:'Shippori Mincho B1','Hiragino Mincho ProN','Yu Mincho',serif;
+  --body:'Zen Kaku Gothic New','Hiragino Sans','Yu Gothic',sans-serif;
+  --num:'Barlow Condensed','Zen Kaku Gothic New','Hiragino Sans',sans-serif;
+  color-scheme:light;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:calc(56px + env(safe-area-inset-top,0px))}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+body{background:var(--paper);color:var(--ink);font-family:var(--body);font-size:16px;line-height:1.85;-webkit-text-size-adjust:100%}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:30;background:var(--paper)}
+a{color:var(--ai)}
+:focus-visible{outline:2px solid var(--taski);outline-offset:2px}
+button{font:inherit;color:inherit}
+h1,h2,h3,h4{font-family:var(--display);text-wrap:balance;word-break:auto-phrase;line-height:1.4;margin:0}
+p{margin:0}
+ul,ol{margin:0;padding-left:1.4em}
+li+li{margin-top:.25em}
+.wrap{max-width:1112px;margin-inline:auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+.wrap.read{max-width:892px}
+.vh{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+
+/* nav */
+.nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:25;background:var(--paper);border-bottom:1px solid var(--rule)}
+.nav .wrap{display:flex;gap:18px;align-items:center;padding-block:10px;font-size:14px;overflow-x:auto;scrollbar-width:none}
+.nav .wrap::-webkit-scrollbar{display:none}
+.nav .brand{font-family:var(--display);font-weight:800;font-size:15px;margin-right:auto;white-space:nowrap;color:var(--ink);text-decoration:none}
+.nav a{text-decoration:none;color:var(--ink-soft);font-weight:500;white-space:nowrap}
+.nav a:hover{color:var(--ai)}
+.nav .sep{flex:none;width:1px;height:14px;background:var(--rule)}
+@media (max-width:600px){.nav .brand{display:none}.nav .wrap{gap:16px}}
+
+/* hero */
+.hero{position:relative;overflow:hidden;border-bottom:1px solid var(--rule)}
+.ribbon{position:absolute;top:-40%;height:190%;pointer-events:none;transform:rotate(34deg);transform-origin:center}
+.ribbon.r1{right:15%;width:58px;background:var(--taski)}
+.ribbon.r2{right:calc(15% + 92px);width:18px;background:var(--taski);opacity:.55}
+@media (max-width:820px){.ribbon.r1{right:-30px;width:40px}.ribbon.r2{right:40px;width:12px}}
+.hero-in{position:relative;padding-block:64px 36px;display:grid;gap:18px;max-width:1112px}
+.eyebrow{font-size:13px;letter-spacing:.12em;color:var(--taski-ink);font-weight:700}
+.hero h1{font-size:clamp(42px,7.4vw,76px);font-weight:800;letter-spacing:.02em;line-height:1.18}
+.tagline{font-family:var(--display);font-weight:600;font-size:clamp(19px,2.7vw,26px);line-height:1.5}
+.lead{color:var(--ink-soft);max-width:36em}
+.cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:6px}
+.btn-main,.btn-sub{display:inline-flex;align-items:center;gap:10px;padding:12px 22px;border-radius:999px;font-weight:700;font-size:15px;text-decoration:none;cursor:pointer;border:1.5px solid var(--ink)}
+.btn-main{background:var(--ink);color:var(--on-ink)}
+.btn-main:hover{background:var(--ink-2)}
+.btn-main svg{width:12px;height:12px;fill:var(--taski)}
+.btn-sub{background:var(--surface);color:var(--ink)}
+.btn-sub:hover{background:var(--ai-tint)}
+.route{position:relative;list-style:none;padding:0;margin:0 0 40px;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));border:1.5px solid var(--ink);border-radius:12px;background:var(--surface);overflow:hidden}
+.route li{margin:0;min-width:0}
+.route li+li{border-left:1px solid var(--rule)}
+.route a{display:grid;gap:2px;padding:14px 18px;text-decoration:none;color:var(--ink);height:100%}
+.route a:hover{background:var(--ai-tint)}
+.route .lbl{font-size:13px;font-weight:700;color:var(--ink-soft);display:flex;align-items:center;gap:8px}
+.route .val{font-family:var(--num);font-weight:600;font-size:34px;line-height:1.1;font-variant-numeric:tabular-nums;letter-spacing:.01em}
+.route .val small{font-family:var(--body);font-size:14px;font-weight:700;margin-left:2px}
+.route .what{font-size:13px;color:var(--ink-soft)}
+@media (max-width:720px){.route{grid-template-columns:repeat(2,minmax(0,1fr))}.route li:nth-child(3){border-left:none}.route li:nth-child(n+3){border-top:1px solid var(--rule)}}
+.stepno{flex:none;display:inline-grid;place-items:center;width:22px;height:22px;border-radius:50%;background:var(--taski);color:var(--ink);font-family:var(--num);font-weight:700;font-size:14px;line-height:1}
+
+/* section heads */
+.sec{padding-block:72px 8px;display:grid;gap:24px}
+.sec-head{display:grid;gap:10px;max-width:44em}
+.kicker{display:flex;align-items:center;gap:8px;font-size:13.5px;font-weight:700;letter-spacing:.12em;color:var(--taski-ink)}
+.sec-head h2{font-size:clamp(26px,4vw,36px);font-weight:800}
+.sec-head p:not(.kicker){color:var(--ink-soft)}
+
+/* course map */
+.profile{display:grid;gap:0}
+.profile > svg{display:block;width:100%;height:auto;max-width:100%}
+.goal-note svg{flex:none;transform:translateY(2px)}
+.legs{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:0}
+.leg{display:grid;align-content:start;gap:6px;padding:16px 18px 6px 0;text-decoration:none;color:var(--ink);border-top:3px solid var(--ink);min-width:0}
+.leg+.leg{padding-left:18px;border-left:1px dashed var(--rule)}
+.leg .no{font-family:var(--display);font-weight:800;font-size:15px;letter-spacing:.12em;color:var(--taski-ink)}
+.leg .terrain{font-size:13px;color:var(--ink-soft);font-weight:500}
+.leg h3{font-size:20px}
+.leg p{font-size:14px;color:var(--ink-soft)}
+.leg:hover h3{color:var(--ai);text-decoration:underline;text-underline-offset:4px;text-decoration-thickness:1px}
+.goal-note{margin-top:18px;font-size:14.5px;color:var(--ink-soft);display:flex;gap:10px;align-items:baseline}
+.goal-note b{color:var(--ink)}
+@media (max-width:720px){.legs{grid-template-columns:1fr}.leg,.leg+.leg{padding:14px 0 12px;border-left:none}.leg+.leg{border-top:1px solid var(--rule)}}
+
+/* video band */
+.band-ink{background:var(--ink);color:var(--on-ink);margin-top:72px}
+.band-ink .sec{padding-block:64px 64px}
+.band-ink .sec-head p:not(.kicker){color:var(--on-ink-soft)}
+.band-ink .kicker{color:var(--taski-light)}
+.player{display:grid;grid-template-columns:minmax(0,1fr) 300px;gap:24px;align-items:start}
+@media (max-width:900px){.player{grid-template-columns:1fr}}
+.vbox{background:#000;border-radius:10px;overflow:hidden;aspect-ratio:720/406;max-width:100%}
+.vbox video{display:block;width:100%;height:100%;background:#000}
+.chapters{list-style:none;padding:0;margin:0;display:grid;gap:2px}
+.chapters li{margin:0}
+.chapters button{width:100%;display:grid;grid-template-columns:52px minmax(0,1fr);gap:10px;align-items:baseline;text-align:left;background:transparent;border:0;border-radius:8px;padding:10px 12px;cursor:pointer;color:var(--on-ink)}
+.chapters button:hover{background:var(--ink-2)}
+.chapters .t{font-family:var(--num);font-weight:600;font-size:18px;color:var(--taski-light);font-variant-numeric:tabular-nums}
+.chapters .c{display:grid;gap:0;min-width:0}
+.chapters .c b{font-weight:700;font-size:15px}
+.chapters .c span{font-size:13px;color:var(--on-ink-soft)}
+.chapters button[aria-current="true"]{background:var(--ink-2);box-shadow:inset 0 0 0 1px var(--taski)}
+.ch-head{font-size:12.5px;letter-spacing:.12em;color:var(--on-ink-soft);font-weight:700;padding:0 12px 6px}
+
+/* audio */
+.audio-card{display:grid;grid-template-columns:auto minmax(0,1fr);gap:20px 28px;align-items:center;background:var(--surface);border:1.5px solid var(--ink);border-radius:14px;padding:22px 24px}
+.split{display:grid;gap:0;padding-right:28px;border-right:1px solid var(--rule)}
+.split .big{font-family:var(--num);font-weight:600;font-size:56px;line-height:1;font-variant-numeric:tabular-nums}
+.split .sm{font-size:13px;color:var(--ink-soft);font-weight:500}
+.ac-main{display:grid;gap:14px;min-width:0}
+.ac-title{font-family:var(--display);font-weight:800;font-size:20px}
+.ac-main audio{width:100%;display:block}
+.ac-tools{display:flex;flex-wrap:wrap;gap:10px 18px;align-items:center;justify-content:space-between}
+.seg{display:inline-flex;border:1px solid var(--rule);border-radius:999px;overflow:hidden;background:var(--paper)}
+.seg button{border:0;background:transparent;padding:5px 12px;font-family:var(--num);font-weight:600;font-size:16px;cursor:pointer;color:var(--ink-soft);font-variant-numeric:tabular-nums}
+.seg button+button{border-left:1px solid var(--rule)}
+.seg button[aria-pressed="true"]{background:var(--ink);color:var(--on-ink)}
+.ac-tools .lab{font-size:12.5px;color:var(--ink-soft);margin-right:8px}
+.ghost{display:inline-flex;align-items:center;gap:6px;border:1px solid var(--ai);color:var(--ai);background:var(--surface);border-radius:999px;padding:5px 14px;font-size:13.5px;font-weight:500;cursor:pointer;text-decoration:none;white-space:nowrap}
+.ghost:hover{background:var(--ai-tint)}
+@media (max-width:640px){.audio-card{grid-template-columns:1fr;padding:18px}.split{border-right:none;padding-right:0;border-bottom:1px solid var(--rule);padding-bottom:12px;grid-auto-flow:column;justify-content:start;align-items:baseline;gap:12px}.split .big{font-size:44px}}
+
+/* slides */
+.viewer{display:grid;gap:12px;outline:none}
+.stage{position:relative;background:var(--surface);border:1.5px solid var(--ink);border-radius:12px;overflow:hidden;aspect-ratio:1600/893;max-width:100%;touch-action:pan-y}
+.stage img{display:block;width:100%;height:100%;object-fit:contain;user-select:none;-webkit-user-drag:none}
+.nb{position:absolute;top:50%;transform:translateY(-50%);width:44px;height:44px;border-radius:50%;border:1px solid var(--rule);background:var(--surface);display:grid;place-items:center;cursor:pointer;box-shadow:0 2px 8px rgba(22,32,59,.14)}
+.nb svg{width:18px;height:18px;stroke:var(--ink);fill:none;stroke-width:2.4;stroke-linecap:round;stroke-linejoin:round}
+.nb:hover{background:var(--ai-tint)}
+.nb:disabled{opacity:.35;cursor:default}
+.nb.prev{left:10px}.nb.next{right:10px}
+@media (max-width:560px){.nb{width:36px;height:36px}.nb.prev{left:6px}.nb.next{right:6px}}
+.sl-bar{display:flex;flex-wrap:wrap;gap:8px 16px;align-items:baseline}
+.sl-count{font-family:var(--num);font-weight:600;font-size:22px;font-variant-numeric:tabular-nums;color:var(--ink-soft);white-space:nowrap}
+.sl-count b{color:var(--ink);font-weight:700}
+.sl-cap{flex:1 1 20em;min-width:0;font-weight:700;font-size:15px}
+.sl-cap span{display:block;font-weight:400;font-size:13px;color:var(--ink-soft)}
+.sl-acts{display:flex;gap:8px;flex-wrap:wrap}
+.thumbs{display:flex;gap:8px;overflow-x:auto;padding:4px 2px 10px;scroll-snap-type:x proximity}
+.thumbs button{flex:none;width:132px;border:2px solid transparent;border-radius:6px;padding:0;background:var(--surface);cursor:pointer;scroll-snap-align:start;position:relative;overflow:hidden}
+.thumbs img{display:block;width:100%;height:auto;aspect-ratio:1600/893}
+.thumbs .tn{position:absolute;left:4px;top:3px;font-family:var(--num);font-weight:700;font-size:13px;background:var(--ink);color:var(--on-ink);border-radius:4px;padding:0 5px;line-height:1.5}
+.thumbs button[aria-current="true"]{border-color:var(--taski)}
+.viewer:fullscreen{background:var(--ink);padding:16px;align-content:center}
+.viewer:fullscreen .stage{max-height:80vh;aspect-ratio:auto;height:80vh}
+.viewer:fullscreen .sl-count,.viewer:fullscreen .sl-cap{color:var(--on-ink)}
+.viewer:fullscreen .sl-cap span,.viewer:fullscreen .sl-count{color:var(--on-ink-soft)}
+
+/* practice intro */
+.steps{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
+.step{background:var(--surface);border:1px solid var(--rule);border-radius:10px;padding:14px 16px;min-width:0}
+.step .n{font-family:var(--num);font-weight:700;font-size:24px;color:var(--taski-ink);line-height:1}
+.step p{font-size:14px;color:var(--ink-soft);margin-top:6px}
+.step b{display:block;color:var(--ink);font-size:15px}
+@media (max-width:720px){.steps{grid-template-columns:1fr}}
+
+/* problem (答案練習帳本体) */
+.problem{padding-block:48px 24px;border-top:2px solid var(--ink);display:grid;gap:28px;margin-top:40px}
+.p-head{display:grid;gap:12px}
+.leg-bar{display:flex;flex-wrap:wrap;align-items:center;gap:8px 12px}
+.leg-tag{font-family:var(--display);font-weight:800;font-size:14px;letter-spacing:.14em;background:var(--taski);color:var(--ink);padding:2px 12px 2px 14px;border-radius:2px;clip-path:polygon(0 0,100% 0,calc(100% - 8px) 100%,0 100%)}
+.terrain-l{font-size:13.5px;color:var(--ink-soft);font-weight:500}
+.jump{display:flex;gap:6px;flex-wrap:wrap;margin-left:auto}
+.jump button{display:inline-flex;align-items:center;gap:6px;font-size:13px;font-weight:500;color:var(--ai);background:var(--surface);border:1px solid var(--rule);border-radius:999px;padding:3px 12px;cursor:pointer;white-space:nowrap}
+.jump button:hover{border-color:var(--ai);background:var(--ai-tint)}
+.jump svg{width:10px;height:10px;fill:currentColor}
+.p-no{font-family:var(--display);font-size:15px;letter-spacing:.2em;color:var(--ai)}
+.p-head h2{font-size:clamp(26px,4.4vw,36px);font-weight:800}
+.chips{list-style:none;padding:0;display:flex;flex-wrap:wrap;gap:6px}
+.chips li{margin:0;font-size:12.5px;padding:2px 10px;border:1px solid var(--rule);border-radius:999px;color:var(--ink-soft);background:var(--surface)}
+.p-tools{display:flex;flex-wrap:wrap;gap:10px 16px;align-items:center;font-size:13.5px;color:var(--ink-soft)}
+.btn{font:inherit;font-size:13.5px;font-weight:500;color:var(--ai);background:var(--surface);border:1px solid var(--ai);border-radius:999px;padding:4px 14px;cursor:pointer}
+.btn:hover{background:var(--ai-tint)}
+.part-row{display:flex;flex-wrap:wrap;align-items:baseline;justify-content:space-between;gap:8px 12px;border-bottom:1px solid var(--rule);padding-bottom:6px}
+.part{font-family:var(--display);font-size:22px;padding-bottom:6px;border-bottom:1px solid var(--rule)}
+.part-row .part{border:0;padding:0}
+.part-row .jump{margin-left:0}
+.block{display:grid;gap:12px}
+.block h3{font-size:17px}
+.facts{background:var(--surface);border:1px solid var(--rule);border-radius:10px;padding:18px 20px;display:grid;gap:10px;min-width:0}
+.facts h4{font-size:15px;color:var(--ai)}
+.facts ol,.facts ul{font-size:15px}
+.rules{font-size:14.5px;background:var(--surface);border:1px solid var(--rule);border-radius:10px;padding:16px 20px;display:grid;gap:6px}
+.rules p{padding-left:1em;text-indent:-1em}
+.say{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
+@media (max-width:760px){.say{grid-template-columns:1fr}}
+.tbl{overflow-x:auto;border:1px solid var(--rule);border-radius:10px;background:var(--surface)}
+table{border-collapse:collapse;width:100%;font-size:14px;line-height:1.7}
+th,td{border-bottom:1px solid var(--rule);padding:10px 12px;text-align:left;vertical-align:top}
+th{background:var(--ai-tint);font-weight:700;white-space:nowrap}
+tr:last-child td{border-bottom:none}
+.tbl.wide table{min-width:640px}
+.q{display:grid;gap:10px;padding:18px 0;border-bottom:1px dashed var(--rule)}
+.q:last-child{border-bottom:none}
+.q h4{font-size:17px}
+.q h4 span{color:var(--ai);margin-right:.4em}
+.q .ask{font-size:15.5px}
+.memo-label{display:flex;justify-content:space-between;font-size:12.5px;color:var(--ink-soft);margin-top:4px}
+.memo-label span{font-variant-numeric:tabular-nums}
+textarea.memo{width:100%;min-height:9.5em;resize:vertical;font:inherit;font-size:15px;color:var(--ink);line-height:1.9em;padding:0 12px;border:1px solid var(--rule);border-radius:8px;background-color:var(--surface);
+  background-image:repeating-linear-gradient(to bottom,transparent 0,transparent calc(1.9em - 1px),var(--rule) calc(1.9em - 1px),var(--rule) 1.9em);background-attachment:local}
+textarea.memo:focus{border-color:var(--ai);outline:none}
+details.ans{border-radius:8px}
+details.ans summary{cursor:pointer;list-style:none;display:inline-flex;align-items:center;gap:6px;font-size:14px;font-weight:700;color:var(--ai);padding:4px 0}
+details.ans summary::-webkit-details-marker{display:none}
+details.ans summary::before{content:"";width:0;height:0;border-left:6px solid currentColor;border-top:5px solid transparent;border-bottom:5px solid transparent;transition:transform .15s}
+details.ans[open] summary::before{transform:rotate(90deg)}
+@media (prefers-reduced-motion:reduce){details.ans summary::before{transition:none}}
+.ans-body{margin-top:8px;background:var(--ai-tint);border-radius:8px;padding:16px 18px;display:grid;gap:12px;font-size:15px;min-width:0}
+.ans-body h5{font-size:14px;font-family:var(--body);font-weight:700;margin:0}
+.pt{background:var(--shu-tint);border-radius:8px;padding:12px 16px;display:grid;gap:6px}
+.pt .lbl{color:var(--shu);font-weight:700;font-size:13.5px;letter-spacing:.06em}
+.pt ul{font-size:14.5px}
+.ans-body .tbl{background:var(--surface)}
+
+/* goal */
+.finish{position:relative;overflow:hidden;margin-top:72px;background:var(--surface);border-top:2px solid var(--ink);border-bottom:1px solid var(--rule)}
+.finish .ribbon.r1{right:-40px;width:46px;top:-60%;height:220%}
+.finish .ribbon.r2{display:none}
+.finish-in{position:relative;padding-block:64px;display:grid;gap:24px}
+.finish h2{font-size:clamp(28px,4.6vw,42px);font-weight:800}
+.thesis{margin:0;font-family:var(--display);font-weight:600;font-size:clamp(18px,2.4vw,22px);line-height:1.75;padding-left:18px;border-left:3px solid var(--taski);max-width:34em}
+.goal-tbl td:first-child{white-space:nowrap}
+.goal-tbl td:nth-child(3){font-weight:700}
+
+/* footer */
+.notes{padding-block:40px 64px;display:grid;gap:14px;font-size:14px;color:var(--ink-soft)}
+.notes h2{font-size:18px;color:var(--ink)}
+.small{font-size:12.5px}
+</style>
+
+</head>
+<body>
+<nav class="nav" aria-label="ページ内の移動">
+  <div class="wrap">
+    <a class="brand" href="#top">特定社労士 答案練習帳</a>
+    <a href="#video">動画</a>
+    <a href="#audio">音声</a>
+    <a href="#slides">スライド</a>
+    <span class="sep" aria-hidden="true"></span>
+    <a href="#p1">第1区</a>
+    <a href="#p2">第2区</a>
+    <a href="#p3">第3区</a>
+    <a href="#goal">ゴール</a>
+  </div>
+</nav>
+
+<header class="hero" id="top">
+  <div class="ribbon r2" aria-hidden="true"></div>
+  <div class="ribbon r1" aria-hidden="true"></div>
+  <div class="wrap hero-in">
+    <p class="eyebrow">特定社会保険労務士試験（紛争解決手続代理業務試験）対策</p>
+    <h1>特定社労士<br>答案練習帳</h1>
+    <p class="tagline">知識と実務のタスキをつなぐ、3区間の軌跡</p>
+    <p class="lead">情報の持ち出しによる懲戒解雇、休日の行為がSNSで拡散した塾講師の譴責、カスハラ後のメンタル不調と休職命令。3つの事案を動画・音声・スライドで予習してから、答案を書いて解答例と見比べます。</p>
+    <div class="cta">
+      <a class="btn-main" href="#video"><svg viewBox="0 0 12 12" aria-hidden="true"><path d="M1 0l11 6-11 6z"/></svg>10分の動画から始める</a>
+      <a class="btn-sub" href="#practice">すぐに答案を書く</a>
+    </div>
+  </div>
+  <div class="wrap">
+    <ol class="route" aria-label="おすすめの進め方">
+      <li><a href="#video"><span class="lbl"><span class="stepno">1</span>見る</span><span class="val">10:16</span><span class="what">動画で全体像</span></a></li>
+      <li><a href="#audio"><span class="lbl"><span class="stepno">2</span>聞く</span><span class="val">18:29</span><span class="what">音声で論点を復習</span></a></li>
+      <li><a href="#slides"><span class="lbl"><span class="stepno">3</span>めくる</span><span class="val">14<small>枚</small></span><span class="what">スライドで整理</span></a></li>
+      <li><a href="#practice"><span class="lbl"><span class="stepno">4</span>書く</span><span class="val">3<small>題</small></span><span class="what">答案メモと解答例</span></a></li>
+    </ol>
+  </div>
+</header>
+
+<section class="wrap sec" id="course" aria-labelledby="course-h">
+  <div class="sec-head">
+    <p class="kicker">大会コースマップ</p>
+    <h2 id="course-h">3つの難所を、順に走る</h2>
+    <p>区間ごとに路面が変わります。平地はスピード、下り坂はバランス、最後の山は複数の争点を一度に抱えて登ります。</p>
+  </div>
+  <div class="profile">
+    <svg viewBox="0 0 900 170" role="img" aria-label="コースの高低図。第1区は平地、第2区は下り坂、第3区は急な山を登ってゴールに至る">
+      <path d="M0 104 L300 104 C340 104 362 96 392 99 C452 106 520 144 600 144 C664 144 704 108 756 52 L790 22 L822 54 C850 84 872 100 900 104 L900 170 L0 170 Z" style="fill:var(--ai-tint)"/>
+      <path d="M0 104 L300 104 C340 104 362 96 392 99 C452 106 520 144 600 144 C664 144 704 108 756 52 L790 22 L822 54 C850 84 872 100 900 104" style="fill:none;stroke:var(--ink);stroke-width:3"/>
+      <path d="M0 90 L300 90 C340 90 362 82 392 85 C452 92 520 130 600 130 C664 130 704 94 756 38 L790 8" style="fill:none;stroke:var(--taski);stroke-width:7;stroke-linecap:round"/>
+      <line x1="300" y1="0" x2="300" y2="170" style="stroke:var(--rule);stroke-width:1.5;stroke-dasharray:4 5"/>
+      <line x1="600" y1="0" x2="600" y2="170" style="stroke:var(--rule);stroke-width:1.5;stroke-dasharray:4 5"/>
+      <g style="fill:var(--ink)">
+        <rect x="14" y="40" width="3" height="64"/><rect x="17" y="40" width="40" height="28" rx="2"/>
+        <rect x="314" y="40" width="3" height="64"/><rect x="317" y="40" width="40" height="28" rx="2"/>
+        <rect x="614" y="80" width="3" height="64"/><rect x="617" y="80" width="40" height="28" rx="2"/>
+      </g>
+      <g style="fill:var(--on-ink);font-family:var(--num);font-weight:700;font-size:22px" text-anchor="middle">
+        <text x="37" y="62">1</text><text x="337" y="62">2</text><text x="637" y="102">3</text>
+      </g>
+      <circle cx="790" cy="22" r="9" style="fill:var(--taski);stroke:var(--ink);stroke-width:2.5"/>
+    </svg>
+    <div class="legs">
+      <a class="leg" href="#p1"><span class="no">第1区</span><span class="terrain">スピード勝負の平地</span><h3>情報漏えいと懲戒解雇</h3><p>事実関係のパターン（A/B/C）で、主張のルートを瞬時に切り替える区間。</p></a>
+      <a class="leg" href="#p2"><span class="no">第2区</span><span class="terrain">バランス感覚が問われる下り坂</span><h3>SNS投稿と私生活</h3><p>「私生活」と「企業秩序」の境界線を綱引きし、落とし所を見極める区間。</p></a>
+      <a class="leg" href="#p3"><span class="no">第3区</span><span class="terrain">複合的争点が立ちはだかる山の神</span><h3>カスハラと休職命令</h3><p>労災、安全配慮義務、賃金控除が複雑に絡み合う最難関の急坂。</p></a>
+    </div>
+    <p class="goal-note"><svg width="14" height="14" viewBox="0 0 14 14" aria-hidden="true"><circle cx="7" cy="7" r="5" style="fill:var(--taski);stroke:var(--ink);stroke-width:2"/></svg><span>各区間を走り抜け、最終的に<b>「依頼者の真のゴール」</b>へタスキを届けることが本大会の目的です。</span></p>
+  </div>
+</section>
+
+<section class="band-ink" id="video" aria-labelledby="video-h">
+  <div class="wrap sec">
+    <div class="sec-head">
+      <p class="kicker"><span class="stepno">1</span>見る</p>
+      <h2 id="video-h">動画で3事案の全体像をつかむ</h2>
+      <p>3つの事案と代理人の倫理を、約10分で通して見ます。右の章を押すと、その場面から再生します。</p>
+    </div>
+    <div class="player">
+      <div class="vbox">
+        <video id="vid" controls preload="metadata" playsinline poster="video-poster.webp">
+          <source src="tokutei-video.mp4" type="video/mp4">
+        </video>
+      </div>
+      <div>
+        <p class="ch-head">チャプター</p>
+        <ol class="chapters" id="chapters">
+          <li><button type="button" data-t="0"><span class="t">0:00</span><span class="c"><b>導入</b><span>休日のミスで、仕事を失うことはあるか</span></span></button></li>
+          <li><button type="button" data-t="76"><span class="t">1:16</span><span class="c"><b>第1区　情報漏えい</b><span>過労気味の従業員による致命的ミス</span></span></button></li>
+          <li><button type="button" data-t="183"><span class="t">3:03</span><span class="c"><b>第2区　SNS炎上事件</b><span>日曜の行動が月曜を台無しに？</span></span></button></li>
+          <li><button type="button" data-t="298"><span class="t">4:58</span><span class="c"><b>第3区　カスタマーハラスメント</b><span>お客様は神様ではない時</span></span></button></li>
+          <li><button type="button" data-t="477.5"><span class="t">7:57</span><span class="c"><b>代理人の倫理</b><span>社労士法22条2項と受任の可否</span></span></button></li>
+          <li><button type="button" data-t="557"><span class="t">9:17</span><span class="c"><b>結論</b><span>人間関係のエコシステム</span></span></button></li>
+        </ol>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="wrap sec" id="audio" aria-labelledby="audio-h">
+  <div class="sec-head">
+    <p class="kicker"><span class="stepno">2</span>聞く</p>
+    <h2 id="audio-h">音声で論点を耳に入れる</h2>
+    <p>約18分の音声解説です。移動中や家事の合間に、速度を上げて聞き直せます。</p>
+  </div>
+  <div class="audio-card">
+    <div class="split"><span class="big">18:29</span><span class="sm">音声解説</span></div>
+    <div class="ac-main">
+      <p class="ac-title">3区間の論点を、耳で通しておさらい</p>
+      <audio id="aud" controls preload="metadata">
+        <source src="tokutei-audio.mp4" type="audio/mp4">
+      </audio>
+      <div class="ac-tools">
+        <div><span class="lab">速度</span><span class="seg" role="group" aria-label="再生速度" id="rates">
+          <button type="button" data-rate="1" aria-pressed="true">1.0×</button><button type="button" data-rate="1.25" aria-pressed="false">1.25×</button><button type="button" data-rate="1.5" aria-pressed="false">1.5×</button><button type="button" data-rate="2" aria-pressed="false">2.0×</button>
+        </span></div>
+        <div class="seg" role="group" aria-label="早戻し・早送り">
+          <button type="button" data-skip="-15">−15秒</button><button type="button" data-skip="15">＋15秒</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="wrap sec" id="slides" aria-labelledby="slides-h">
+  <div class="sec-head">
+    <p class="kicker"><span class="stepno">3</span>めくる</p>
+    <h2 id="slides-h">スライドで要点を確認する</h2>
+    <p>全14枚。各区間の事案背景、主張の軸、解決ルート、倫理規定を1枚ずつ整理しています。左右のボタン、矢印キー、スワイプでめくれます。</p>
+  </div>
+  <div class="viewer" id="viewer" tabindex="0" aria-label="スライド。左右の矢印キーでめくれます">
+    <div class="stage" id="stage">
+      <img id="sl-img" src="slide-01.webp" width="1600" height="893" alt="">
+      <button class="nb prev" id="sl-prev" type="button" aria-label="前のスライド"><svg viewBox="0 0 24 24"><path d="M15 5l-7 7 7 7"/></svg></button>
+      <button class="nb next" id="sl-next" type="button" aria-label="次のスライド"><svg viewBox="0 0 24 24"><path d="M9 5l7 7-7 7"/></svg></button>
+    </div>
+    <div class="sl-bar">
+      <span class="sl-count" aria-live="polite"><b id="sl-n">01</b> / 14</span>
+      <p class="sl-cap" id="sl-cap"></p>
+      <div class="sl-acts">
+        <button class="ghost" type="button" id="sl-full">全画面で見る</button>
+        <a class="ghost" href="tokutei-slides.pdf" download>PDFをダウンロード</a>
+      </div>
+    </div>
+    <div class="thumbs" id="thumbs" aria-label="スライド一覧"></div>
+  </div>
+</section>
+
+<section class="wrap read sec" id="practice" aria-labelledby="practice-h">
+  <div class="sec-head">
+    <p class="kicker"><span class="stepno">4</span>書く</p>
+    <h2 id="practice-h">答案を書いて、解答例と見比べる</h2>
+    <p>第1問（設例と小問（1）〜（5））と第2問（倫理）の形式です。先に自分で書き、解答例と見比べて練習します。</p>
+  </div>
+  <div class="steps">
+    <div class="step"><p class="n">1</p><p><b>設例を読む</b>当事者それぞれに有利な事実を拾いながら読みます。</p></div>
+    <div class="step"><p class="n">2</p><p><b>答案メモに書く</b>各小問の下の欄に書きます。メモはこのブラウザにだけ保存されます。</p></div>
+    <div class="step"><p class="n">3</p><p><b>解答例と見比べる</b>橙色の「採点のポイント」で、抜けた視点を確かめます。</p></div>
+  </div>
+</section>
+
+<main class="wrap read">
+<!-- ===================== 第1題 ===================== -->
+  <section class="problem" id="p1">
+    <div class="p-head">
+      <div class="leg-bar"><span class="leg-tag">第1区</span><span class="terrain-l">スピード勝負の平地</span><span class="jump"><button type="button" data-goto-video="76"><svg viewBox="0 0 12 12" aria-hidden="true"><path d="M1 0l11 6-11 6z"/></svg>動画 1:16〜</button><button type="button" data-goto-slide="3">スライド 3〜5枚目</button></span></div>
+      <p class="p-no">第1題</p>
+      <h2>情報持ち出し・漏えいと懲戒解雇</h2>
+      <ul class="chips"><li>懲戒処分の相当性</li><li>会社の黙認と公平な扱い</li><li>退職金の不支給</li><li>解雇予告</li><li>倫理：業務を行い得ない事件</li></ul>
+      <div class="p-tools"><span data-progress="p1"></span><button class="btn" type="button" data-toggle-answers="p1">解答例をすべて開く</button></div>
+    </div>
+
+    <h3 class="part">第1問　設例</h3>
+    <div class="block">
+      <div class="facts">
+        <h4>共通の事実</h4>
+        <ul>
+          <li>被申請人Y社：個人向け住宅リフォーム会社（従業員50名）。顧客の氏名、住所、電話番号、工事内容を管理している。</li>
+          <li>申請人X：入社8年目の営業事務。月給30万円。懲戒処分の歴なし。</li>
+          <li>就業規則・情報管理規程：業務データの社外への持ち出しを禁止。懲戒事由として「会社の情報を許可なく社外に持ち出したとき」「故意又は重大な過失により個人情報を漏えいさせたとき」を定め、いずれも懲戒解雇までを予定。退職金規程は「懲戒解雇された者には退職金を支給しない」。</li>
+          <li>令和8年4月から、Y社は残業を月20時間以内に抑える方針をとった。業務量は減らず、B課長は「時間内に終わらせろ。できないなら評価に響く」と繰り返し叱責した。</li>
+          <li>Xを含む課員5名のうち4名が、データを自宅に持ち帰って作業していた。B課長は、課員が自宅で作った資料を翌朝受け取って使っており、持ち帰りを知っていた。</li>
+          <li>Y社は弁明の機会を与えず、令和8年10月31日付でXを即日懲戒解雇した。解雇予告手当は支払わず、除外認定も受けていない。退職金（約240万円）は支給していない。</li>
+          <li>Xは、令和8年11月、特定社会保険労務士であるあなたに代理を依頼し、紛争調整委員会にあっせんを申請しようとしている。</li>
+        </ul>
+      </div>
+      <div class="tbl wide">
+        <table>
+          <tr><th>パターン</th><th>漏えいの経緯</th></tr>
+          <tr><td>A　不正アクセス</td><td>Xの私物PCが不正アクセスを受け、顧客約300名分の氏名、住所、電話番号、工事内容が流出した。Xは気づいた当日にB課長へ報告した。</td></tr>
+          <tr><td>B　飲酒で紛失</td><td>Xは暗号化していない私物のUSBメモリにデータを入れて持ち帰る途中、私的な飲み会で深酒し、USBの入ったカバンを電車に置き忘れた。翌朝B課長に報告し、警察に遺失届を出した。USBは見つかっていないが、悪用は確認されていない。</td></tr>
+          <tr><td>C　紛失＋隠蔽</td><td>Bに加え、Xは紛失に気づいた後3日間報告せず、B課長に尋ねられて「自宅にある」と虚偽の説明をした。顧客から「工事の件で不審な電話があった」との問い合わせを受けたY社が調べて発覚した。</td></tr>
+        </table>
+      </div>
+    </div>
+
+    <h3 class="part">第1問　小問</h3>
+    <div>
+      <div class="q">
+        <h4><span>小問（1）</span>求めるあっせんの内容</h4>
+        <p class="ask">Xの代理人として、あっせんを求める内容を記載しなさい（3パターン共通）。</p>
+        <label class="memo-label" for="m-p1-q1">答案メモ<span data-count-for="m-p1-q1"></span></label>
+        <textarea class="memo" id="m-p1-q1" data-p="p1"></textarea>
+        <details class="ans" data-p="p1"><summary>解答例を見る</summary><div class="ans-body">
+          <ol>
+            <li>Y社は、Xに対する令和8年10月31日付懲戒解雇を撤回し、Xが労働契約上の権利を有する地位にあることを確認すること。</li>
+            <li>Y社は、Xに対し、令和8年11月以降、毎月の賃金支払日限り、月額30万円を支払うこと。</li>
+          </ol>
+          <div class="pt"><p class="lbl">採点のポイント</p><ul>
+            <li>持ち帰り作業の割増賃金も求めうるが、自宅作業の労働時間性という別の争点が増えるため、設問が求めなければ触れる程度にとどめる。</li>
+            <li>退職金と解雇予告手当は、地位確認（解雇がなかったこと）と両立しないため、ここでは求めず、小問（5）の合意退職の中で扱う。</li>
+          </ul></div>
+        </div></details>
+      </div>
+
+      <div class="q">
+        <h4><span>小問（2）</span>申請人の主張</h4>
+        <p class="ask">Xの主張を、3パターン共通の主張と、パターンごとに足す主張に分けて記載しなさい。</p>
+        <label class="memo-label" for="m-p1-q2">答案メモ<span data-count-for="m-p1-q2"></span></label>
+        <textarea class="memo" id="m-p1-q2" data-p="p1"></textarea>
+        <details class="ans" data-p="p1"><summary>解答例を見る</summary><div class="ans-body">
+          <h5>共通の主張</h5>
+          <ol>
+            <li>懲戒事由にあたらない：持ち出しは業務を終えるためで、私的な利益はない。B課長は自宅で作った資料を受け取って使っており、持ち帰りを黙認していた。規程は形だけになっており、「許可なく」持ち出したとはいえない。</li>
+            <li>処分が重すぎる（労働契約法15条）：残業を規制しながら業務量を減らさず、叱責と評価で追い込んだのはY社であり、持ち帰らざるを得ない状況を会社がつくった。課員4名が同じように持ち帰っていたのにXだけを懲戒解雇するのは公平を欠く。勤続8年で処分歴がない。</li>
+            <li>手続が不相当：弁明の機会が与えられていない。</li>
+            <li>予告を欠く：Xに予告なしで解雇されるほどの帰責事由はなく、即日解雇するなら解雇予告手当を支払うべきだった（労働基準法20条）。</li>
+            <li>退職金の不支給は許されない：不支給が許されるのは、勤続の功を抹消するほどの著しい背信行為がある場合に限られる。</li>
+          </ol>
+          <div class="tbl"><table>
+            <tr><th>パターン</th><th>足す主張</th></tr>
+            <tr><td>A</td><td>漏えいの原因は第三者の犯罪で、Xに故意はない。気づいた当日に報告しており、「故意又は重大な過失」による漏えいにはあたらない。</td></tr>
+            <tr><td>B</td><td>紛失は過失だが、翌朝に報告し遺失届を出して被害の拡大を防ごうとした。悪用は確認されておらず、「重大な過失」とまではいえない。</td></tr>
+            <tr><td>C</td><td>報告の遅れと事実と異なる説明は認める。ただし、動揺と処分への恐れによるもので、積極的に隠す意図はなかった。反省しており、黙認と業務過多の事情も変わらない。懲戒解雇はなお重すぎる。</td></tr>
+          </table></div>
+          <div class="pt"><p class="lbl">採点のポイント</p><ul>
+            <li>Cで虚偽の説明を否定すると、あっせん委員の信頼を失う。認めるべき事実は認め、主張を「処分の重さ」に集中させる。</li>
+          </ul></div>
+        </div></details>
+      </div>
+
+      <div class="q">
+        <h4><span>小問（3）</span>被申請人の主張</h4>
+        <p class="ask">Y社の主張を、パターンA・B・Cで比較して記載しなさい。</p>
+        <label class="memo-label" for="m-p1-q3">答案メモ<span data-count-for="m-p1-q3"></span></label>
+        <textarea class="memo" id="m-p1-q3" data-p="p1"></textarea>
+        <details class="ans" data-p="p1"><summary>解答例を見る</summary><div class="ans-body">
+          <div class="tbl wide"><table>
+            <tr><th>主張の柱</th><th>A 不正アクセス</th><th>B 飲酒で紛失</th><th>C 紛失＋隠蔽</th></tr>
+            <tr><td>懲戒事由（持ち出し）</td><td>規程で明示的に禁止された持ち出しにあたる</td><td>同じ。加えて、暗号化していない私物のUSBで持ち出した</td><td>Bと同じ</td></tr>
+            <tr><td>懲戒事由（漏えいなど）</td><td>私物PCの安全対策を怠った重大な過失により漏えいさせた</td><td>深酒して紛失したのは重大な過失である</td><td>Bに加え、紛失を3日間報告せず虚偽の説明をした。報告義務違反と虚偽報告という別の懲戒事由にあたる</td></tr>
+            <tr><td>処分の相当性</td><td>顧客約300名の情報が流出し、顧客対応と信用回復に大きな負担が生じた</td><td>原因は私的な深酒で、Xの落ち度が大きい。黙認していたのは持ち帰りまでで、暗号化しないUSBで持ち歩き深酒することまで認めていない</td><td>隠蔽で初動が3日遅れ、顧客への不審な電話という二次被害が出た。黙認や業務過多とは関係のない背信行為である</td></tr>
+            <tr><td>黙認の主張への反論</td><td>会社として許可したことはない。B課長個人の認識は会社の許可ではない</td><td>Aと同じ</td><td>Aと同じ。加えて、隠蔽は黙認の範囲外である</td></tr>
+            <tr><td>退職金</td><td>規程どおり不支給とする</td><td>Aと同じ</td><td>隠蔽という背信行為は、勤続の功を抹消するに足りる</td></tr>
+          </table></div>
+          <div class="pt"><p class="lbl">採点のポイント</p><ul>
+            <li>AとBでは主張の軸は「持ち出しと漏えいの結果」、Cでは「隠蔽という背信」に移る。隠蔽は黙認や業務過多と切り離して評価できるため、Y社にとって最も強い主張になる。</li>
+            <li>解雇予告手当：除外認定は解雇の効力の要件ではないとされ、予告なしの解雇が許されるかは「労働者の責めに帰すべき事由」が実際にあったかで決まる。AとBでは否定されやすく、Cでは争う余地が出る。</li>
+          </ul></div>
+        </div></details>
+      </div>
+
+      <div class="q">
+        <h4><span>小問（4）</span>争点</h4>
+        <p class="ask">本件の争点を記載し、パターンごとにどの争点が重心になるかを示しなさい。</p>
+        <label class="memo-label" for="m-p1-q4">答案メモ<span data-count-for="m-p1-q4"></span></label>
+        <textarea class="memo" id="m-p1-q4" data-p="p1"></textarea>
+        <details class="ans" data-p="p1"><summary>解答例を見る</summary><div class="ans-body">
+          <ol>
+            <li>懲戒事由にあたるか：B課長の黙認がある中で「許可なく」持ち出したといえるか。「故意又は重大な過失」による漏えいといえるか。</li>
+            <li>懲戒解雇が社会通念上相当か（労働契約法15条）：黙認、同僚との公平な扱い、業務過多、結果の重大さ、勤続年数と処分歴。</li>
+            <li>手続が相当か：弁明の機会を与えなかったこと。</li>
+            <li>退職金を支給しないことが許されるか：勤続の功を抹消するほどの著しい背信行為があるか。</li>
+            <li>解雇予告手当の支払いが必要か：「労働者の責めに帰すべき事由」があるか。</li>
+          </ol>
+          <div class="tbl"><table>
+            <tr><th>パターン</th><th>重心になる争点</th></tr>
+            <tr><td>A</td><td>1の「重大な過失」。第三者の犯罪が間に入っているため、Xの過失は軽く評価されやすい。</td></tr>
+            <tr><td>B</td><td>1の「重大な過失」と、2の「黙認の範囲」。深酒と暗号化なしのUSBまで黙認が及ぶか。</td></tr>
+            <tr><td>C</td><td>2の相当性と4の退職金。虚偽の報告は独立した懲戒事由となり、「著しい背信行為」にあたるかが最大の争点になる。</td></tr>
+          </table></div>
+        </div></details>
+      </div>
+
+      <div class="q">
+        <h4><span>小問（5）</span>解決案</h4>
+        <p class="ask">Xの代理人として、パターンごとにどのような解決を目指すか、内容と理由を記載しなさい。</p>
+        <label class="memo-label" for="m-p1-q5">答案メモ<span data-count-for="m-p1-q5"></span></label>
+        <textarea class="memo" id="m-p1-q5" data-p="p1"></textarea>
+        <details class="ans" data-p="p1"><summary>解答例を見る</summary><div class="ans-body">
+          <div class="tbl wide"><table>
+            <tr><th>項目</th><th>A 不正アクセス</th><th>B 飲酒で紛失</th><th>C 紛失＋隠蔽</th></tr>
+            <tr><td>目標</td><td>懲戒解雇の撤回と、十分な金銭解決</td><td>懲戒解雇の撤回と、金銭解決</td><td>懲戒解雇の記録を消すことを最優先</td></tr>
+            <tr><td>雇用関係</td><td>懲戒解雇を撤回し、会社都合の合意退職とする</td><td>Aと同じ</td><td>懲戒解雇を撤回し、自己都合の合意退職とする</td></tr>
+            <tr><td>解決金の目安</td><td>賃金の4〜6か月分（120〜180万円）</td><td>賃金の2〜3か月分（60〜90万円）</td><td>求めない、または解雇予告手当にあたる程度</td></tr>
+            <tr><td>退職金</td><td>全額（約240万円）を支給</td><td>全額を求める。一部の減額は交渉の余地とする</td><td>一部の支給を求める（例：5割、約120万円）</td></tr>
+            <tr><td>離職理由</td><td>会社都合</td><td>会社都合</td><td>自己都合</td></tr>
+          </table></div>
+          <h5>3パターン共通の条項</h5>
+          <ul>
+            <li>本件について口外しないこと、互いに誹謗中傷しないこと</li>
+            <li>Xが持っている顧客情報をすべて返却・削除したことの確認（私物PCを含む）</li>
+            <li>この合意のほかに、互いに債権債務がないことの確認（清算条項）</li>
+          </ul>
+          <h5>理由</h5>
+          <p>AはY社の責任（黙認、業務過多、安全管理の不備）が大きく、懲戒解雇が無効とされるおそれが高いため、解決金を高めに設定できる。BはXの落ち度が加わる分だけ下がる。Cは懲戒解雇が認められるおそれがあるため、再就職への影響を考え、金額より「懲戒解雇の記録を残さないこと」と「退職金の一部確保」を優先する。</p>
+          <div class="pt"><p class="lbl">採点のポイント</p><ul>
+            <li>金額は練習用の目安。実際には勤続年数、年齢、再就職の見込み、会社の規模、証拠の強さで変わる。</li>
+            <li>隠蔽という事実1つで、被申請人の主張の軸が「持ち出し」から「背信」に移り、解決案の目標が「解決金」から「記録を消すこと」に変わる。</li>
+          </ul></div>
+        </div></details>
+      </div>
+    </div>
+
+    <div class="part-row"><h3 class="part">第2問　倫理</h3><span class="jump"><button type="button" data-goto-video="477.5"><svg viewBox="0 0 12 12" aria-hidden="true"><path d="M1 0l11 6-11 6z"/></svg>動画 7:57〜</button><button type="button" data-goto-slide="12">スライド 12枚目</button></span></div>
+    <div>
+      <div class="q">
+        <p class="ask">Y社の顧問社労士S（特定社会保険労務士）は、懲戒処分の前にY社の社長から相談を受け、処分の重さについて助言していた。</p>
+        <ol class="ask">
+          <li>その後、XからSに、Y社を相手方とするあっせんの代理を依頼された。Sは受任できるか。</li>
+          <li>Y社から、Y社の代理人としてあっせんに臨むよう依頼された場合はどうか。</li>
+          <li>仮にXが、紛争調整委員会ではなく社会保険労務士会の労働紛争解決センター（厚生労働大臣が指定する民間紛争解決手続）に申し立てる場合、紛争の目的の価額が120万円を超えるとき、Xの代理人となる特定社会保険労務士（S以外）は単独で代理できるか。</li>
+        </ol>
+        <label class="memo-label" for="m-p1-e">答案メモ<span data-count-for="m-p1-e"></span></label>
+        <textarea class="memo" id="m-p1-e" data-p="p1"></textarea>
+        <details class="ans" data-p="p1"><summary>解答例を見る</summary><div class="ans-body">
+          <h5>（1）受任すべきではない</h5>
+          <ul>
+            <li>社会保険労務士法22条2項1号は、紛争解決手続代理業務に関するものとして、相手方の協議を受けて賛助し、又はその依頼を承諾した事件について、紛争解決手続代理業務を禁じている。Sは、相手方となるY社から本件の懲戒処分について協議を受け、助言している。</li>
+            <li>社長の相談が紛争に備えたものであれば1号がそのまま当てはまる。通常の労務相談であっても、同じ事件で相手方に助言した者が反対側の代理人になることは、同項の趣旨に反し、公正な立場で誠実に業務を行う義務（1条の2）や信用失墜行為の禁止（16条）にも反する。顧問として知った秘密を用いるおそれもある（21条）。</li>
+          </ul>
+          <h5>（2）受任できる</h5>
+          <ul><li>紛争調整委員会のあっせんの代理は特定社会保険労務士の業務であり（2条1項1号の4）、事前に相談を受けた側の代理人になることは22条2項の問題を生じない。顧問先であることも妨げにならない。</li></ul>
+          <h5>（3）単独では代理できない</h5>
+          <ul>
+            <li>民間紛争解決手続の代理は、紛争の目的の価額が120万円を超える場合、弁護士が同一の依頼者から受任しているものに限られる（2条1項1号の6）。弁護士と共同で受任すれば代理できる。</li>
+            <li>労働局の紛争調整委員会（1号の4）や都道府県労働委員会（1号の5）のあっせんには、この額の制限はない。</li>
+          </ul>
+          <div class="pt"><p class="lbl">採点のポイント</p><ul>
+            <li>22条2項は、1号（協議を受けて賛助した、又は依頼を承諾した事件）と2号（協議の程度と方法が信頼関係に基づく事件）を分けて当てはめる。顧問として継続的に相談を受けている場合は、賛助まではしていなくても2号を検討する。</li>
+          </ul></div>
+        </div></details>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== 第2題 ===================== -->
+  <section class="problem" id="p2">
+    <div class="p-head">
+      <div class="leg-bar"><span class="leg-tag">第2区</span><span class="terrain-l">バランス感覚が問われる下り坂</span><span class="jump"><button type="button" data-goto-video="183"><svg viewBox="0 0 12 12" aria-hidden="true"><path d="M1 0l11 6-11 6z"/></svg>動画 3:03〜</button><button type="button" data-goto-slide="6">スライド 6〜8枚目</button></span></div>
+      <p class="p-no">第2題</p>
+      <h2>塾講師のSNS拡散と譴責処分</h2>
+      <ul class="chips"><li>私生活上の行為と企業秩序</li><li>社会的評価の著しい低下</li><li>譴責の相当性</li><li>あっせんで求める内容（撤回）</li><li>倫理：顧問先を相手方とする代理</li></ul>
+      <div class="p-tools"><span data-progress="p2"></span><button class="btn" type="button" data-toggle-answers="p2">解答例をすべて開く</button></div>
+    </div>
+
+    <h3 class="part">第1問　設例</h3>
+    <div class="block">
+      <p>Xは、令和8年11月、特定社会保険労務士であるあなたに代理を依頼し、紛争調整委員会にあっせんを申請しようとしている。</p>
+      <div class="rules">
+        <h4 style="font-family:var(--body);font-size:15px;color:var(--ai)">就業規則（抜粋）</h4>
+        <p>第○条（懲戒事由）　社員が次の各号のいずれかに該当するときは、懲戒処分を行うことがある。</p>
+        <p>1　会社の名誉もしくは信用を毀損したとき</p>
+        <p>2　会社の社会的評価を著しく低下させたとき</p>
+        <p>3　その他前各号に準ずる不適切な行為を行ったとき</p>
+        <p>第△条（懲戒の種類）　懲戒は、譴責、減給、出勤停止、降格、諭旨解雇及び懲戒解雇とする。譴責は、書面により将来を戒めるものとする。</p>
+      </div>
+      <div class="say">
+        <div class="facts">
+          <h4>Xの言い分</h4>
+          <ol>
+            <li>Y社に入社して7年になる35歳の正社員で、A教室で小中学生の約30名を担当している。教室長ではなく、決裁の権限はない。懲戒処分を受けたことはない。</li>
+            <li>令和8年9月の日曜日の午後、私服で、A教室から約3キロ離れた自宅近くの公園で犬を散歩させていた。制服や名札は着けていなかった。自転車が近づいたので、犬が道路側に出ないようリードを何回か強く引いた。その後、公園の外で吸ったたばこの吸殻を道路に捨ててしまった。吸殻のことは反省している。</li>
+            <li>近所の住民が撮影し、私の顔が分かる動画に塾名とA教室名を添えて「こんな人が子どもを教えているのか」とSNSに投稿した。私は撮影にも塾名の記載にも関わっていない。</li>
+            <li>事情を聴かれ、行為を認めたうえで、犬は自転車が近づいたためだと説明した。それでもY社は、10月15日、「会社の社会的評価を著しく低下させたとき」にあたるとして、書面で譴責処分を通知してきた。</li>
+            <li>休日の私服での行為で、授業や保護者対応とは関係ない。授業も予定どおり行われている。退塾した10名のうち2名は前から通塾曜日の変更を相談していたと聞いており、理由がはっきりしない人もいる。注意なら分かるが、懲戒処分は納得できない。</li>
+            <li>譴責の記録が人事評価や昇給に響くのが心配だ。講師を続けたいので、処分を取り消し、記録が人事に使われないようにしてほしい。</li>
+          </ol>
+        </div>
+        <div class="facts">
+          <h4>Y社の言い分（人事部長B）</h4>
+          <ol>
+            <li>関東地方で学習塾を5教室運営し、小中学生約430名が通う。入塾案内に「保護者の方と連携し、お子さまが安心して学べる教室づくりを進めます」と書き、ウェブサイトには担当講師の顔写真と氏名を載せている。</li>
+            <li>Xは授業だけでなく、保護者との面談や、体験授業後の入塾相談も担当しており、保護者から直接信頼を得なければならない立場にある。</li>
+            <li>投稿は2日ほどで広く拡散し、その後1週間で保護者から20件を超える苦情や問い合わせがあった。「子どもを預けるのが不安になった」という声もあり、教室長らが個別の説明に追われた。</li>
+            <li>2週間で10名が退塾し、うち6名の保護者は動画を見て信頼が揺らいだことを理由に挙げた。6名にはXの担当外の塾生2名も含まれる。入塾手続中の3名も契約を見送り、うち2名は動画を理由に挙げた。</li>
+            <li>動画を確認したうえでXから事情を聴き、Xは行為を認めた。自転車の点は動画からは確認できなかった。最も軽い譴責を選び、減給や担当の変更はしていない。就業規則は入社時から社内システムで閲覧できる。</li>
+            <li>私生活上のことでも、当社の信用に実際に影響が出ている。処分は取り消せない。</li>
+          </ol>
+        </div>
+      </div>
+    </div>
+
+    <h3 class="part">第1問　小問</h3>
+    <div>
+      <div class="q">
+        <h4><span>小問（1）</span>あっせんを求める事項</h4>
+        <p class="ask">あっせん申請書の「あっせんを求める事項」に記載する内容を、簡潔に記載しなさい。</p>
+        <label class="memo-label" for="m-p2-q1">答案メモ<span data-count-for="m-p2-q1"></span></label>
+        <textarea class="memo" id="m-p2-q1" data-p="p2"></textarea>
+        <details class="ans" data-p="p2"><summary>解答例を見る</summary><div class="ans-body">
+          <p>被申請人は、申請人に対する令和8年10月15日付け譴責処分を撤回し、その旨を書面で申請人に通知すること。また、本件処分を懲戒歴として扱わず、人事評価、昇給その他の人事上の判断に用いないこと。</p>
+          <div class="pt"><p class="lbl">採点のポイント</p><ul>
+            <li>あっせんは処分の有効・無効を判断する手続ではないため、「無効の確認」ではなく、会社にしてほしいこと（撤回）を書く。</li>
+            <li>Xは在職を続けたいので、「人事上の判断に用いないこと」まで書くと、本当の目的（将来の不利益を避けること）に届く。</li>
+          </ul></div>
+        </div></details>
+      </div>
+
+      <div class="q">
+        <h4><span>小問（2）</span>Xの主張の根拠となる事実</h4>
+        <p class="ask">本件譴責処分が無効であると主張するうえで根拠となる事実を、Xの言い分から簡潔に挙げなさい。</p>
+        <label class="memo-label" for="m-p2-q2">答案メモ<span data-count-for="m-p2-q2"></span></label>
+        <textarea class="memo" id="m-p2-q2" data-p="p2"></textarea>
+        <details class="ans" data-p="p2"><summary>解答例を見る</summary><div class="ans-body">
+          <h5>懲戒事由にあたらないこと（社会的評価を「著しく」低下させたとはいえないこと）</h5>
+          <ul>
+            <li>日曜日の午後、私服で、勤務先から約3キロ離れた公園での行為で、制服や名札も着けていなかった</li>
+            <li>撮影、塾名の記載、投稿はいずれも第三者が行い、Xは関与していない</li>
+            <li>授業は予定どおり行われ、業務に支障は生じていない</li>
+            <li>退塾10名のうち2名は以前から曜日変更を相談しており、理由のはっきりしない者もいる</li>
+          </ul>
+          <h5>処分が重すぎること</h5>
+          <ul>
+            <li>犬を強く引いたのは、自転車が近づいたためだった</li>
+            <li>吸殻のことは反省しており、注意は受け入れている</li>
+            <li>入社7年で処分歴がなく、教室長ではなく決裁権限もない</li>
+          </ul>
+          <div class="pt"><p class="lbl">採点のポイント</p><ul>
+            <li>「私生活上の行為だから懲戒できない」とだけ書くのでは不十分。私生活上の行為でも懲戒の対象になりうることを前提に、「影響が重大とまではいえない」という形で事実を並べる。</li>
+          </ul></div>
+        </div></details>
+      </div>
+
+      <div class="q">
+        <h4><span>小問（3）</span>Y社の主張の根拠となる事実</h4>
+        <p class="ask">Y社が、本件譴責処分が有効であると主張するうえで根拠とする事実を、Y社の言い分から簡潔に挙げなさい。</p>
+        <label class="memo-label" for="m-p2-q3">答案メモ<span data-count-for="m-p2-q3"></span></label>
+        <textarea class="memo" id="m-p2-q3" data-p="p2"></textarea>
+        <details class="ans" data-p="p2"><summary>解答例を見る</summary><div class="ans-body">
+          <h5>懲戒事由にあたること</h5>
+          <ul>
+            <li>小中学生を対象とする学習塾で、保護者の信頼が事業の土台である（入塾案内の記載）</li>
+            <li>ウェブサイトに講師の顔写真と氏名を載せており、講師個人と塾が結び付きやすい</li>
+            <li>Xは保護者面談や入塾相談も担当し、保護者の信頼を直接得る立場にある</li>
+            <li>2日で拡散し、1週間で20件を超える苦情・問い合わせがあった</li>
+            <li>2週間で10名が退塾し、うち6名が動画を理由に挙げた（Xの担当外の2名を含む）</li>
+            <li>入塾手続中の3名が見送り、うち2名が動画を理由に挙げた</li>
+          </ul>
+          <h5>処分が相当であること</h5>
+          <ul>
+            <li>Xは行為を認め、Y社は事情を聴いた（弁明の機会）</li>
+            <li>最も軽い譴責を選び、減給や担当の変更はしていない</li>
+            <li>就業規則は入社時から閲覧できた（周知）</li>
+          </ul>
+          <div class="pt"><p class="lbl">採点のポイント</p><ul>
+            <li>「Xの担当外の塾生も退塾した」事実は、影響が講師個人への不信を超えて、塾全体の評価に及んだことを示す。</li>
+            <li>具体的な業務の阻害や取引上の不利益は懲戒の必須の要件ではないが、退塾や入塾の見送りは悪影響の重大さを具体的に示す事情になる。</li>
+          </ul></div>
+        </div></details>
+      </div>
+
+      <div class="q">
+        <h4><span>小問（4）</span>争点</h4>
+        <p class="ask">本件の争点を、簡潔に記載しなさい。</p>
+        <label class="memo-label" for="m-p2-q4">答案メモ<span data-count-for="m-p2-q4"></span></label>
+        <textarea class="memo" id="m-p2-q4" data-p="p2"></textarea>
+        <details class="ans" data-p="p2"><summary>解答例を見る</summary><div class="ans-body">
+          <ol>
+            <li>本件行為が、就業規則の懲戒事由（会社の社会的評価を著しく低下させたとき）にあたるか。私生活上の行為が企業秩序と関連し、行為の性質・態様、Y社の事業の種類・規模、Xの職種等に照らして、社会的評価への悪影響が相当重大であると客観的に評価できるか（第三者による塾名の公表、退塾等との因果関係の評価を含む）。</li>
+            <li>懲戒事由にあたるとして、本件譴責処分が、客観的に合理的な理由を欠き、社会通念上相当と認められないものとして無効となるか（労働契約法15条）。</li>
+          </ol>
+          <div class="pt"><p class="lbl">採点のポイント</p><ul>
+            <li>「私生活上の行為かどうか」は双方が認めており、争点ではない。争点は「私生活上の行為でも懲戒の対象になるほどの影響があったか」。</li>
+          </ul></div>
+        </div></details>
+      </div>
+
+      <div class="q">
+        <h4><span>小問（5）</span>解決案</h4>
+        <p class="ask">あっせんの期日において、どのような解決を目指すか。Xの意向と見通しを踏まえ、内容と理由を記載しなさい。</p>
+        <label class="memo-label" for="m-p2-q5">答案メモ<span data-count-for="m-p2-q5"></span></label>
+        <textarea class="memo" id="m-p2-q5" data-p="p2"></textarea>
+        <details class="ans" data-p="p2"><summary>解答例を見る</summary><div class="ans-body">
+          <ol>
+            <li>第一案：譴責処分を撤回し、懲戒歴として扱わないことを確約してもらう。</li>
+            <li>譲歩案：譴責を撤回し、懲戒にあたらない「厳重注意」（文書による注意）に切り替える。合意書に、本件を懲戒歴として扱わず、人事評価、昇給、賞与その他の人事上の判断に用いないことを明記する。</li>
+            <li>あわせて：Xは吸殻のことについて反省の意を示し、今後は私生活上も勤務先の信用に配慮する旨を表明する。双方とも本件を口外しない。</li>
+          </ol>
+          <h5>理由</h5>
+          <p>6名の退塾と2名の入塾見送りが動画を理由としており、Xの担当外にも及んでいる。小中学生を対象とする事業で、Xが保護者対応も担う講師であることを考えると、懲戒事由にあたると判断される可能性は相応にあり、譴責は最も軽い処分である。一方、休日・私服・勤務先から離れた場所での行為で、勤務先を公表したのは第三者、退塾の一部は本件と無関係か理由不明という事情は、Y社にとっても処分維持のリスクになる。Xは在職を続けたいので、処分の形を懲戒から注意に変えれば、Y社は「指導した」という形を保て、Xは懲戒歴を残さずに済む。</p>
+          <div class="pt"><p class="lbl">採点のポイント</p><ul>
+            <li>在職したまま会社と争う事案では、金額ではなく「今後の人事上の不利益を残さないこと」が実質的な勝ち筋になる。</li>
+          </ul></div>
+        </div></details>
+      </div>
+    </div>
+
+    <div class="part-row"><h3 class="part">第2問　倫理</h3><span class="jump"><button type="button" data-goto-video="477.5"><svg viewBox="0 0 12 12" aria-hidden="true"><path d="M1 0l11 6-11 6z"/></svg>動画 7:57〜</button><button type="button" data-goto-slide="12">スライド 12枚目</button></span></div>
+    <div>
+      <div class="q">
+        <p class="ask">特定社会保険労務士Qは、Y社と顧問契約を結び、労務管理の相談に応じている。次の場合、Qは、Xから依頼を受けて、Y社を相手方とする本件あっせんの代理人となることができるか。理由とともに答えなさい。</p>
+        <ol class="ask">
+          <li>Qが、本件処分の前にY社の社長から相談を受け、「譴責が相当である」と助言していた場合</li>
+          <li>Qが、本件についてY社から一切相談を受けていない場合</li>
+        </ol>
+        <label class="memo-label" for="m-p2-e">答案メモ<span data-count-for="m-p2-e"></span></label>
+        <textarea class="memo" id="m-p2-e" data-p="p2"></textarea>
+        <details class="ans" data-p="p2"><summary>解答例を見る</summary><div class="ans-body">
+          <h5>（1）代理人となることはできない（受任すべきではない）</h5>
+          <ul>
+            <li>社会保険労務士法22条2項1号は、紛争解決手続代理業務に関するものとして、相手方の協議を受けて賛助し、又はその依頼を承諾した事件について、紛争解決手続代理業務を禁じている。Qは相手方となるY社から本件処分について相談を受け、譴責が相当と助言（賛助）している。</li>
+            <li>相談が紛争に備えたものであれば1号がそのまま当てはまる。通常の労務相談として受けたものでも、同じ事件で相手方に賛助した者が反対側の代理人となることは、同項の趣旨に反し、公正誠実義務（1条の2）や信用失墜行為の禁止（16条）にも反する。顧問として知った秘密を用いるおそれもある（21条）。</li>
+          </ul>
+          <h5>（2）22条2項には直接あたらないが、受任は差し控えるべき</h5>
+          <ul>
+            <li>本件について協議を受けていないため、22条2項各号には直接あたらない。</li>
+            <li>しかし、継続的な顧問契約で信頼関係にある会社を相手方とする代理は、顧問先との信頼関係を損ない、公正誠実義務（1条の2）や信用失墜行為の禁止（16条）に照らして問題がある。顧問業務で知ったY社の情報を用いるおそれもある（21条）。</li>
+          </ul>
+          <div class="pt"><p class="lbl">採点のポイント</p><ul>
+            <li>（1）と（2）の違いは「本件について協議を受けたか」。条文に直接あたるか、趣旨や一般的な義務から導くかを書き分ける。</li>
+            <li>（2）の結論は教材によって書き方が分かれうる。研修の教材の立場を確認する。</li>
+          </ul></div>
+        </div></details>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== 第3題 ===================== -->
+  <section class="problem" id="p3">
+    <div class="p-head">
+      <div class="leg-bar"><span class="leg-tag">第3区</span><span class="terrain-l">複合的争点が立ちはだかる山の神</span><span class="jump"><button type="button" data-goto-video="298"><svg viewBox="0 0 12 12" aria-hidden="true"><path d="M1 0l11 6-11 6z"/></svg>動画 4:58〜</button><button type="button" data-goto-slide="9">スライド 9〜11枚目</button></span></div>
+      <p class="p-no">第3題</p>
+      <h2>カスハラ後のメンタル不調と休職命令</h2>
+      <ul class="chips"><li>休職命令の有効性</li><li>業務起因性と労災認定基準</li><li>不就労時間の賃金（民法536条2項）</li><li>安全配慮義務とカスハラ対策の義務化</li><li>倫理：代理できる範囲</li></ul>
+      <div class="p-tools"><span data-progress="p3"></span><button class="btn" type="button" data-toggle-answers="p3">解答例をすべて開く</button></div>
+    </div>
+
+    <h3 class="part">第1問　設例</h3>
+    <div class="block">
+      <p>甲は、令和8年11月、特定社会保険労務士であるあなたに代理を依頼し、紛争調整委員会にあっせんを申請しようとしている。</p>
+      <div class="tbl">
+        <table>
+          <tr><th>当事者等</th><th>内容</th></tr>
+          <tr><td>Y社（被申請人）</td><td>首都圏で20店舗を運営するスーパーマーケット。本社に人事部とハラスメント相談窓口を置き、嘱託の産業医がいる</td></tr>
+          <tr><td>甲（申請人）</td><td>Y社B店のパートタイマー。勤続6年で無期労働契約に転換済み。時給1,350円、1日6時間・週5日。健康保険・厚生年金保険に加入。日配品売場とレジを担当</td></tr>
+          <tr><td>乙</td><td>B店の売場マネージャー（正社員）。甲の直属の上司</td></tr>
+          <tr><td>丙・丁</td><td>丙はB店のパートタイマーで甲の同僚。丁はB店の店長</td></tr>
+          <tr><td>A</td><td>B店の常連客</td></tr>
+        </table>
+      </div>
+      <p>B店では毎週土曜日に特売セールを行い、前日に新聞折込みとアプリでチラシを配信している。</p>
+      <div class="rules">
+        <h4 style="font-family:var(--body);font-size:15px;color:var(--ai)">パートタイマー就業規則（抜粋）</h4>
+        <p>第15条（服務）　従業員は、所属長の許可なく勤務中に職場を離れてはならない。</p>
+        <p>第24条（不就労時間の賃金）　遅刻、早退、私用外出その他により勤務しなかった時間については、その時間に対応する賃金を支払わない。</p>
+        <p>第30条（休職）　業務外の傷病により欠勤が引き続き1か月を超えたとき、又は業務外の傷病により通常の業務を遂行できないと会社が認めたときは、休職を命ずることがある。休職期間は3か月とする。</p>
+        <p>第31条（休職中の賃金）　休職期間中は無給とする。</p>
+        <p>第32条（復職）　会社は、復職の可否を判断するため、医師の診断書の提出を求め、会社の指定する医師の診断を受けさせることがある。休職期間が満了しても復職できないときは、期間満了の日をもって退職とする。</p>
+        <p>第40条（解雇）　精神又は身体の障害により、業務に耐えられないと認められるときは、解雇することがある。</p>
+      </div>
+      <div class="say">
+        <div class="facts">
+          <h4>甲の言い分</h4>
+          <ol>
+            <li>9月12日（土）の特売で、卵を「お一人さま1パック限り、先着150パック」で売っていた。10時40分ごろ、Aさんに完売を伝えると、いきなり大声で怒鳴り、謝罪を求めた。「広告どおりの数を用意したのか証明しろ。できないなら特売価格で売れ」と要求された。</li>
+            <li>証明する手段も価格を決める権限もなく、うつむいて黙ってしまった。Aさんはさらに激怒し、「能力がない」「客をバカにしているのか」「どんな教育を受けてきたんだ」と、ほかのお客さまの前で責め続けた。</li>
+            <li>乙マネージャーは約5メートル先で検品をしており、何度かこちらを見ていたが来てくれなかった。約20分後、同僚の丙さんが内線で丁店長に連絡し、店長がAさんに謝罪して収まった。</li>
+            <li>その後、店長から「災難だったね」と言われただけで、面談も報告書もなく、Aさんが再び来たときの対応も決められなかった。相談窓口は上司や同僚のハラスメント用だと思っていた。10月1日の本社の通達は聞いたことがない。</li>
+            <li>9月下旬から土曜日が近づくと頭痛や動悸がして眠れなくなり、10月3日に心療内科で適応障害と診断され、通院を始めた。これまで心の病気で大きな悩みを抱えたことはない。</li>
+            <li>10月10日（土）10時10分ごろ、入口でAさんを見たとたん足がすくみ、動悸が止まらなくなった。とっさにバックヤードに逃げ込み、Aさんが帰ったのを確かめて11時10分ごろ売場に戻った。動揺して、誰かに伝えることも思いつかなかった。</li>
+            <li>戻ると、乙マネージャーからほかの従業員の前で厳しく叱られ、「離れていた1時間分の時給は引く」と言われた。9月の件以来Aさんが怖いこと、通院していることを説明した。</li>
+            <li>乙マネージャーは「そんな状態では仕事にならない。休職して治療に専念しろ」と言った。家計を支えているので休職はできない、休職するなら給与を全額保障してほしいと伝えると、「就業規則どおりになる」「満足に仕事ができないなら解雇もある」と、規則を見せながら言われた。仕事が原因なのだから労災ではないかと言ったが、取り合ってもらえなかった。</li>
+            <li>10月14日、言われて主治医の診断書を店長に出した。「適応障害。就労は可能。ただし、特定の顧客への対応を避けるなどの配慮が望ましい」と書かれている。その後も予定どおり勤務していた。</li>
+            <li>10月25日の給与で、1時間分（1,350円）が引かれていた。</li>
+            <li>10月30日、人事部から「業務外の傷病により通常の業務を遂行できない」として、11月1日から3か月の休職を命じる書面が届いた。産業医との面談も、私の話を聞く機会もなかった。休職中は無給で、傷病手当金の申請書が同封されていた。</li>
+            <li>労災の請求書の事業主証明を人事部に頼んだが、「業務上とは考えていないので証明できない」と断られた。</li>
+            <li>働き続けたい。Aさんの対応から外してもらえれば仕事はできる。休職命令を取り消し、休職中の給与と引かれた1時間分を払ってほしい。会社がきちんと対応していれば、こうはならなかった。労災の申請にも協力してほしい。</li>
+          </ol>
+        </div>
+        <div class="facts">
+          <h4>Y社の言い分（人事部長）</h4>
+          <ol>
+            <li>9月12日の卵は、チラシに「数量限定、なくなり次第終了」と明記し、広告どおり150パックを用意した。Aの要求に応じる理由はない。店長が対応して収めており、会社として対応したと考えている。</li>
+            <li>乙は納品トラックの到着時刻に合わせて検品をしており、「大声は聞こえたが、そこまでの事態とは思わなかった」と説明している。</li>
+            <li>令和7年に「カスタマーハラスメントに対する基本方針」を定めてホームページで公表している。令和8年10月1日には全店舗に通達を出し、「カスハラを受けたら一人で対応せず、すぐに責任者に交代すること」と周知した。通達は各店の店長あてに送り、店舗での周知は店長に任せている。本社のハラスメント相談窓口に、甲からの相談はなかった。</li>
+            <li>10月10日、甲は誰にも告げずに約60分間売場を離れた。特売日で人手が足りず、レジに列ができ、ほかの従業員が穴を埋めた。この日、Aは買い物をしただけで、甲には何もしていない。通達どおり責任者に一声かければ対応できた。勤務しなかった時間の賃金を支払わないのは、就業規則第24条に基づく。</li>
+            <li>甲は「土曜日が近づくと体調が悪くなる」「Aの顔を見ると怖くなる」と言っている。特売は毎週土曜日で、Aがいつ来店するかは分からず、業務に支障が出る。B店は小さな店舗で、Aの来店を見張って甲を外す体制はとれない。通院中でもあり、治療に専念することが本人のためと考え、就業規則第30条に基づき休職を命じた。休職中の生活については、傷病手当金の手続を案内している。</li>
+            <li>9月12日の件は一度きりの出来事で、店長が謝罪してその場で収まっている。業務による不調とは考えていないので、事業主証明には応じていない。労災の申請は甲が自分でできるはずだ。</li>
+            <li>解雇は決めていない。乙は就業規則の定めを説明しただけである。</li>
+          </ol>
+        </div>
+      </div>
+    </div>
+
+    <h3 class="part">第1問　小問</h3>
+    <div>
+      <div class="q">
+        <h4><span>小問（1）</span>あっせんを求める事項</h4>
+        <p class="ask">あっせん申請書の「あっせんを求める事項」に記載する内容を、簡潔に記載しなさい。</p>
+        <label class="memo-label" for="m-p3-q1">答案メモ<span data-count-for="m-p3-q1"></span></label>
+        <textarea class="memo" id="m-p3-q1" data-p="p3"></textarea>
+        <details class="ans" data-p="p3"><summary>解答例を見る</summary><div class="ans-body">
+          <ol>
+            <li>被申請人は、申請人に対する令和8年10月30日付け休職命令を撤回し、申請人を就労させること。その際、申請人がAへの対応をしないで済むよう、配置等について配慮すること。</li>
+            <li>被申請人は、申請人に対し、休職命令により就労できなかった期間の賃金を支払うこと。</li>
+            <li>被申請人は、申請人に対し、令和8年10月分の賃金から控除した1,350円を支払うこと。</li>
+            <li>被申請人は、申請人に対し、安全配慮義務違反による慰謝料として金50万円（額は一例）を支払うこと。</li>
+            <li>被申請人は、カスタマーハラスメントの再発防止のための措置を講じること。</li>
+            <li>被申請人は、申請人の労災保険給付の請求に必要な証明を行うなど、請求に協力すること。</li>
+          </ol>
+          <div class="pt"><p class="lbl">採点のポイント</p><ul>
+            <li>業務上の疾病かどうかは労働基準監督署長が判断するため、「労災と認めること」は求めない。会社に求めるのは請求への協力。事業主は、保険給付に必要な証明を求められたら速やかに証明しなければならず（労災保険法施行規則23条2項）、業務上ではないと考えるなら、労働基準監督署長に意見を申し出ればよい（同23条の2）。</li>
+            <li>「休職中の給与を全額保障」という希望は、休職命令が無効であれば賃金の請求（会社の責めに帰すべき事由による就労不能、民法536条2項）として組み立て直す。</li>
+            <li>甲の本当の希望は働き続けることなので、就労と配慮を先頭に置く。</li>
+            <li>カスハラ対策の措置義務については、労働局による紛争解決の援助や調停の仕組みも用意されている。本件は休職命令、賃金、損害賠償が中心なのであっせんを選び、再発防止策は和解の条項として求める。</li>
+          </ul></div>
+        </div></details>
+      </div>
+
+      <div class="q">
+        <h4><span>小問（2）</span>甲の主張の根拠となる事実</h4>
+        <p class="ask">甲の主張の根拠となる事実を、甲の言い分から、①休職命令の効力、②10月10日の1時間分の賃金、③Y社の安全配慮義務違反の論点ごとに簡潔に挙げなさい。</p>
+        <label class="memo-label" for="m-p3-q2">答案メモ<span data-count-for="m-p3-q2"></span></label>
+        <textarea class="memo" id="m-p3-q2" data-p="p3"></textarea>
+        <details class="ans" data-p="p3"><summary>解答例を見る</summary><div class="ans-body">
+          <h5>①休職命令の効力</h5>
+          <ul>
+            <li>主治医は「就労は可能」とし、必要なのは特定の顧客への対応を避ける配慮だけである</li>
+            <li>10月10日以降も、休職命令まで予定どおり勤務していた</li>
+            <li>支障が出るのは、Aが来店したときに限られる</li>
+            <li>産業医との面談も、本人の話を聞く機会もないまま休職を命じた</li>
+            <li>不調の原因は9月12日のカスハラで、「業務外の傷病」を要件とする第30条にあたらない</li>
+            <li>心の病気で大きな悩みを抱えたことはなく、9月下旬から症状が出た</li>
+          </ul>
+          <h5>②1時間分の賃金</h5>
+          <ul>
+            <li>Aを見て足がすくみ、動悸が止まらなくなった（症状によるやむを得ない退避）</li>
+            <li>Aが再び来店したときの対応が、会社で何も決められていなかった</li>
+            <li>10月1日の通達は甲に知らされていなかった</li>
+          </ul>
+          <h5>③安全配慮義務違反</h5>
+          <ul>
+            <li>約20分間、ほかの客の前で人格を否定する言動を受けた</li>
+            <li>乙は約5メートル先で様子を見ながら検品を続け、介入しなかった</li>
+            <li>店長に連絡したのは同僚の丙で、その後も面談、報告書、再発防止策はなかった</li>
+            <li>Aは常連客なのに、再来店時の対応を決めていなかった</li>
+            <li>相談窓口がカスハラも扱うことも、10月1日の通達も、店舗で周知されていなかった</li>
+            <li>不調を打ち明けた甲に、乙はほかの従業員の前で叱責し、時給の減額と「解雇もある」と告げた</li>
+          </ul>
+          <div class="pt"><p class="lbl">採点のポイント</p><ul>
+            <li>2026年10月1日から、カスハラ対策（方針の周知、相談体制、事後の迅速・適切な対応など）は事業主の義務になっている（改正労働施策総合推進法）。9月12日は施行前だが、安全配慮義務（労働契約法5条）は施行前からある。10月10日以降の対応は、施行後の義務に照らして評価できる。</li>
+          </ul></div>
+        </div></details>
+      </div>
+
+      <div class="q">
+        <h4><span>小問（3）</span>Y社の主張の根拠となる事実</h4>
+        <p class="ask">Y社の主張の根拠となる事実を、Y社の言い分から、小問（2）と同じ論点ごとに簡潔に挙げなさい。</p>
+        <label class="memo-label" for="m-p3-q3">答案メモ<span data-count-for="m-p3-q3"></span></label>
+        <textarea class="memo" id="m-p3-q3" data-p="p3"></textarea>
+        <details class="ans" data-p="p3"><summary>解答例を見る</summary><div class="ans-body">
+          <h5>①休職命令の効力</h5>
+          <ul>
+            <li>特売は毎週土曜日で、甲は「土曜日が近づくと体調が悪くなる」と述べている</li>
+            <li>Aの来店は予測できず、小さな店舗では来店を見張って甲を外す体制はとれない</li>
+            <li>通院中であり、治療に専念させることが本人のためと判断した</li>
+            <li>第30条に基づく休職で、傷病手当金の手続も案内した</li>
+            <li>9月12日の件は一度きりで、店長の謝罪で収まっており、業務による不調とは考えていない</li>
+            <li>解雇は決めておらず、乙は規則を説明しただけである</li>
+          </ul>
+          <h5>②1時間分の賃金</h5>
+          <ul>
+            <li>誰にも告げずに約60分間売場を離れた（第15条違反）</li>
+            <li>特売日で人手が足りず、レジに列ができ、ほかの従業員が穴を埋めた</li>
+            <li>Aはその日、甲に何もしていない</li>
+            <li>通達どおり責任者に一声かければ対応できた</li>
+            <li>勤務しなかった時間の賃金を支払わないのは第24条に基づく</li>
+          </ul>
+          <h5>③安全配慮義務違反</h5>
+          <ul>
+            <li>卵は広告どおり150パックを用意し、チラシに「数量限定」と明記していた</li>
+            <li>店長が対応して事態を収めた</li>
+            <li>乙は検品中で、そこまでの事態とは思わなかった</li>
+            <li>令和7年に基本方針を公表し、10月1日に通達を出し、相談窓口もある。甲からの相談はなかった</li>
+          </ul>
+          <div class="pt"><p class="lbl">採点のポイント</p><ul>
+            <li>Y社の言い分の中にも甲に有利な事実がある。「店舗での周知は店長に任せている」「事業主証明に応じていない」は、甲の代理人として使える。事業主証明は災害の発生状況などの事実を証明するもので、業務上と認めることではない。</li>
+          </ul></div>
+        </div></details>
+      </div>
+
+      <div class="q">
+        <h4><span>小問（4）</span>争点</h4>
+        <p class="ask">本件の争点を、簡潔に記載しなさい。</p>
+        <label class="memo-label" for="m-p3-q4">答案メモ<span data-count-for="m-p3-q4"></span></label>
+        <textarea class="memo" id="m-p3-q4" data-p="p3"></textarea>
+        <details class="ans" data-p="p3"><summary>解答例を見る</summary><div class="ans-body">
+          <ol>
+            <li>休職命令の有効性
+              <ul>
+                <li>甲の適応障害が、第30条の「業務外の傷病」にあたるか（業務起因性）</li>
+                <li>甲が「通常の業務を遂行できない」状態にあったか（就労可能とする主治医の診断、配置の配慮で就労できたか、産業医や本人の意見を聞かなかった手続）</li>
+                <li>無効であれば、休職期間中の賃金請求権があるか（民法536条2項）</li>
+              </ul>
+            </li>
+            <li>10月10日の1時間分の賃金請求権の有無（労務を提供しなかったことについて、Y社に責めに帰すべき事由があるか）</li>
+            <li>Y社の安全配慮義務違反の有無と損害（9月12日の対応と事後の措置、Aの再来店への備え、10月1日以降のカスハラ対策の実施状況）</li>
+          </ol>
+          <div class="pt"><p class="lbl">採点のポイント</p><ul>
+            <li>業務起因性は、発病前おおむね6か月の間に業務による強い心理的負荷があり、業務以外の心理的負荷や個体側の要因で発病したとは認められないかで判断される。労災の認定基準では、顧客から人格を否定する言動を1回受けただけなら「中」だが、会社が把握していても適切な対応がなく改善されなかった場合は「強」とされる。乙の傍観と事後の対応のなさが、ここに効く。</li>
+            <li>業務上の疾病と判断されれば、療養のための休業期間とその後30日間は解雇が制限される（労働基準法19条）。私傷病休職の期間満了による退職も問題になるため、争点1は今後の雇用の継続に直結する。</li>
+            <li>1時間分の控除は、働かなかった時間の賃金の問題で、減給の制裁（労働基準法91条）とは別。争点は、働けなかったことがY社の責めに帰すべき事由によるか（民法536条2項）にある。</li>
+          </ul></div>
+        </div></details>
+      </div>
+
+      <div class="q">
+        <h4><span>小問（5）</span>解決案</h4>
+        <p class="ask">あっせんの期日において、どのような解決を目指すか。甲の意向と見通しを踏まえ、内容と理由を記載しなさい。</p>
+        <label class="memo-label" for="m-p3-q5">答案メモ<span data-count-for="m-p3-q5"></span></label>
+        <textarea class="memo" id="m-p3-q5" data-p="p3"></textarea>
+        <details class="ans" data-p="p3"><summary>解答例を見る</summary><div class="ans-body">
+          <h5>目指す解決（第一案）</h5>
+          <ol>
+            <li>休職命令を撤回して復職させる。主治医と産業医の意見を踏まえ、当面の配慮を書面で定める（Aが来店したら直ちに責任者が対応し、甲は責任者に告げてバックヤード業務に移ってよい。一定期間、特売日の配置を見直す）。</li>
+            <li>休職期間中の賃金と、10月10日に控除した1,350円を支払う。</li>
+            <li>解決金（慰謝料を含む）を支払う（例：30万円程度。甲の賃金の2か月分弱）。</li>
+            <li>再発防止策として、店舗でカスハラ対応の研修を行い、10月1日の通達を全従業員に周知する。Aへの対応（注意、必要に応じた来店の制限など）を検討する。</li>
+            <li>Y社は甲の労災保険給付の請求に必要な証明に応じる。業務上かどうかに意見があれば、労働基準監督署長に別に申し出る。</li>
+          </ol>
+          <h5>甲が当面の就労を難しいと感じる場合の代案</h5>
+          <ul>
+            <li>合意による休職とし、休職期間満了による退職の規定は、労災請求の結果が出るまで適用しない。</li>
+            <li>休職中の生活は、労災と認められれば休業補償給付（給付基礎日額の60％に休業特別支給金20％が加わる）、認められなければ傷病手当金（標準報酬月額をもとにした日額の3分の2）で支える。</li>
+          </ul>
+          <h5>理由</h5>
+          <p>主治医は就労可能で配慮で足りるとし、産業医や本人の意見も聞いていないため、休職を命じる必要性には疑問がある。業務起因性についても、人格を否定する言動を会社が把握しながら事後の対応をしなかった事情があり、「業務外の傷病」と断定するのは難しい。一方、甲が誰にも告げずに60分間売場を離れたこと、その日Aは何もしていないこと、通達が出されていたことは甲に不利で、1,350円や解決金の額には譲歩の余地を残しておく。甲の希望は働き続けることと収入の確保なので、金銭より復職と配慮の内容を優先する。Y社にとっても、義務になったカスハラ対策を店舗で実効あるものにする機会になり、合意しやすい。</p>
+          <div class="pt"><p class="lbl">採点のポイント</p><ul>
+            <li>「休職中の給与を全額保障」という甲の要求は、そのままでは法的な根拠がない。「休職命令が無効なら賃金、労災なら休業補償給付、私傷病なら傷病手当金」と整理し直して依頼者に説明できるかが、代理人の力の見せどころ。</li>
+          </ul></div>
+        </div></details>
+      </div>
+    </div>
+
+    <div class="part-row"><h3 class="part">第2問　倫理</h3><span class="jump"><button type="button" data-goto-video="477.5"><svg viewBox="0 0 12 12" aria-hidden="true"><path d="M1 0l11 6-11 6z"/></svg>動画 7:57〜</button><button type="button" data-goto-slide="12">スライド 12枚目</button></span></div>
+    <div>
+      <div class="q">
+        <p class="ask">特定社会保険労務士Sは、甲から本件あっせんの代理を受任した。その後、甲から次の依頼を受けた。Sはそれぞれ受任できるか。理由とともに答えなさい。</p>
+        <ol class="ask">
+          <li>Aに対して、甲への謝罪と慰謝料の支払いを求める交渉</li>
+          <li>労働基準監督署長に対する、労災保険の休業補償給付の請求書の作成と提出</li>
+          <li>あっせんが打ち切られた場合の、Y社を相手方とする訴訟の代理</li>
+        </ol>
+        <label class="memo-label" for="m-p3-e">答案メモ<span data-count-for="m-p3-e"></span></label>
+        <textarea class="memo" id="m-p3-e" data-p="p3"></textarea>
+        <details class="ans" data-p="p3"><summary>解答例を見る</summary><div class="ans-body">
+          <h5>（1）受任できない</h5>
+          <ul>
+            <li>紛争解決手続代理業務は、労働者と事業主の間の個別労働関係紛争について、あっせん等の手続を代理するものである（社会保険労務士法2条1項1号の4〜1号の6）。手続の中での和解の交渉は含まれるが、甲と顧客Aの紛争は個別労働関係紛争ではなく、Aはあっせんの当事者でもない。</li>
+            <li>報酬を得てAとの交渉をすれば、弁護士でない者による法律事務の取扱い（弁護士法72条）に触れるおそれがある。弁護士を紹介する。</li>
+          </ul>
+          <h5>（2）受任できる</h5>
+          <ul>
+            <li>労災保険の請求書の作成（2条1項1号）、提出の代行（1号の2）、行政機関に対する事務代理（1号の3）は社会保険労務士の通常の業務であり、特定社会保険労務士でなくても行える。</li>
+            <li>事業主の証明が得られない場合も、その事情を説明して請求書を提出できる。</li>
+          </ul>
+          <h5>（3）受任できない</h5>
+          <ul>
+            <li>訴訟の代理は弁護士の業務であり、労働審判の代理もできない。</li>
+            <li>ただし、弁護士である代理人とともに、補佐人として裁判所に出頭し、陳述することはできる（2条の2）。2025年10月の改正で「訴訟代理人」が「代理人」に改められ、労働審判などの非訟事件の手続でも補佐人になれるようになった。</li>
+          </ul>
+          <div class="pt"><p class="lbl">採点のポイント</p><ul>
+            <li>「誰と誰の紛争か」「どの手続か」の2つの軸で、代理できる範囲を切り分ける。</li>
+          </ul></div>
+        </div></details>
+      </div>
+    </div>
+  </section>
+</main>
+
+<section class="finish" id="goal" aria-labelledby="goal-h">
+  <div class="ribbon r1" aria-hidden="true"></div>
+  <div class="wrap read finish-in">
+    <p class="kicker">フィニッシュライン　3区間を貫く本質</p>
+    <h2 id="goal-h">知識を暗記から「実務の武器」へ。</h2>
+    <blockquote class="thesis">特定社労士の真の走力とは、条文の強弱を競うことではない。依頼者の「今後の人生（真のゴール）」から逆算し、最適な法的ルートを描き出すことである。</blockquote>
+    <div class="tbl wide goal-tbl">
+      <table>
+        <tr><th>題</th><th>法的主張の見通し</th><th>真のゴール</th><th>戦術</th></tr>
+        <tr><td>第1題<br>（隠蔽のパターン）</td><td>勝ち目が薄い</td><td>再就職への影響を断つ</td><td>金銭を捨ててでも、自己都合の合意退職で懲戒解雇の記録を消しに行く</td></tr>
+        <tr><td>第2題<br>（SNS）</td><td>処分の完全な無効は難しい</td><td>在職したまま、人事評価への悪影響を防ぐ</td><td>「譴責」から「厳重注意」へ処分の形を変え、実質的に無傷で終える</td></tr>
+        <tr><td>第3題<br>（休職命令）</td><td>休職中の給与の全額保障は、そのままでは根拠がない</td><td>収入を保ちながら、同じ職場で働き続ける</td><td>賃金・労災・傷病手当金の根拠を整理し、和解で復職と配慮の土台をつくる</td></tr>
+      </table>
+    </div>
+  </div>
+</section>
+
+<div class="wrap read">
+<footer class="notes">
+    <h2>この練習帳について</h2>
+    <ul>
+      <li>設例はすべて架空です。解答例は練習用の一例で、唯一の正解ではありません。</li>
+      <li>解答は判例名を書かず、判断の枠組みで書いています。</li>
+      <li>法令と制度は2026年11月時点のものです（社会保険労務士法は令和7年改正後、カスハラ対策は2026年10月施行の改正労働施策総合推進法）。実際の試験の形式は、最新の試験要領で確認してください。</li>
+      <li>答案メモは、このブラウザの中にだけ保存されます。ほかの人や別の端末には共有されません。</li>
+      <li>動画・音声・スライドは、生成AIで作った予習用の解説です。解答例と表現や結論の細部が異なるところは、本文の解答例を基準にしてください。</li>
+    </ul>
+    <p class="small">参考：<a href="https://hourei.net/law/343AC1000000089">社会保険労務士法（条文。令和7年改正は未反映）</a>／<a href="https://www.mhlw.go.jp/content/11201000/001140929.pdf">心理的負荷による精神障害の認定基準（厚生労働省）</a>／<a href="https://www.businesslawyers.jp/articles/1457">2026年10月カスハラ対策が義務化（BUSINESS LAWYERS）</a>／<a href="https://www.mhlw.go.jp/content/11200000/001529706.pdf">社会保険労務士法の令和7年改正の概要（厚生労働省）</a></p>
+    <p class="small">作成：おぶすま社会保険労務士・行政書士事務所　新井 健司（最終確認 2026年11月11日）</p>
+  </footer>
+</div>
+
+<script>
+(function(){
+  var PREFIX = 'tokutei-renshu:';
+  function get(k){ try { return localStorage.getItem(k); } catch(e){ return null; } }
+  function set(k,v){ try { localStorage.setItem(k,v); } catch(e){} }
+  function del(k){ try { localStorage.removeItem(k); } catch(e){} }
+  var memos = Array.prototype.slice.call(document.querySelectorAll('textarea.memo'));
+  function count(t){
+    var out = document.querySelector('[data-count-for="' + t.id + '"]');
+    if (out) out.textContent = t.value.replace(/\s/g,'').length + '字';
+  }
+  function progress(){
+    document.querySelectorAll('[data-progress]').forEach(function(el){
+      var p = el.getAttribute('data-progress');
+      var ts = memos.filter(function(t){ return t.getAttribute('data-p') === p; });
+      var n = ts.filter(function(t){ return t.value.trim() !== ''; }).length;
+      el.textContent = '答案メモ ' + n + ' / ' + ts.length + ' 問';
+    });
+  }
+  memos.forEach(function(t){
+    var saved = get(PREFIX + t.id);
+    if (saved) t.value = saved;
+    count(t);
+    t.addEventListener('input', function(){
+      count(t);
+      if (t.value) set(PREFIX + t.id, t.value); else del(PREFIX + t.id);
+      progress();
+    });
+  });
+  progress();
+  document.querySelectorAll('[data-toggle-answers]').forEach(function(b){
+    b.addEventListener('click', function(){
+      var p = b.getAttribute('data-toggle-answers');
+      var ds = Array.prototype.slice.call(document.querySelectorAll('details.ans[data-p="' + p + '"]'));
+      var open = !ds.every(function(d){ return d.open; });
+      ds.forEach(function(d){ d.open = open; });
+      b.textContent = open ? '解答例をすべて閉じる' : '解答例をすべて開く';
+    });
+  });
+})();
+</script>
+<script>
+(function(){
+  var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  function scrollToId(id){ var el=document.getElementById(id); if(el) el.scrollIntoView({behavior: reduce?'auto':'smooth', block:'start'}); }
+
+  /* ---- video ---- */
+  var vid=document.getElementById('vid');
+  var chBtns=[].slice.call(document.querySelectorAll('#chapters button'));
+  var chTimes=chBtns.map(function(b){return parseFloat(b.getAttribute('data-t'));});
+  function playFrom(t){
+    function go(){ try{ vid.currentTime=t; }catch(e){} var p=vid.play(); if(p&&p.catch) p.catch(function(){}); }
+    if(vid.readyState>=1) go(); else { vid.addEventListener('loadedmetadata', go, {once:true}); try{vid.load();}catch(e){} }
+  }
+  function markChapter(){
+    var t=vid.currentTime||0, k=0;
+    for(var i=0;i<chTimes.length;i++){ if(t+0.3>=chTimes[i]) k=i; }
+    chBtns.forEach(function(b,i){ b.setAttribute('aria-current', i===k?'true':'false'); });
+  }
+  chBtns.forEach(function(b){ b.addEventListener('click', function(){ playFrom(parseFloat(b.getAttribute('data-t'))); }); });
+  vid.addEventListener('timeupdate', markChapter);
+  markChapter();
+
+  /* ---- audio ---- */
+  var aud=document.getElementById('aud');
+  var rateBtns=[].slice.call(document.querySelectorAll('#rates button'));
+  rateBtns.forEach(function(b){ b.addEventListener('click', function(){
+    var r=parseFloat(b.getAttribute('data-rate')); aud.playbackRate=r; aud.defaultPlaybackRate=r;
+    rateBtns.forEach(function(x){ x.setAttribute('aria-pressed', x===b?'true':'false'); });
+  }); });
+  aud.addEventListener('loadedmetadata', function(){
+    var on=rateBtns.filter(function(x){return x.getAttribute('aria-pressed')==='true';})[0];
+    if(on) aud.playbackRate=parseFloat(on.getAttribute('data-rate'));
+  });
+  [].forEach.call(document.querySelectorAll('[data-skip]'), function(b){ b.addEventListener('click', function(){
+    var d=parseFloat(b.getAttribute('data-skip'));
+    try{ aud.currentTime=Math.max(0, Math.min((aud.duration||1e9)-0.5, (aud.currentTime||0)+d)); }catch(e){}
+  }); });
+
+  /* ---- slides ---- */
+  var SL=[
+    ['表紙','特定社労士 答案練習帳　知識と実務のタスキをつなぐ、3区間の軌跡'],
+    ['大会コースマップ','3つの難所を攻略する全体構想'],
+    ['第1区　エントリー状況','情報持ち出しによる懲戒解雇の事案背景'],
+    ['第1区　スプリットタイム分析','漏えい経緯（3パターン）による主張軸の変動'],
+    ['第1区　中継所へのアプローチ','パターン別・最適解決ルートの策定'],
+    ['第2区　コース状況','塾講師のSNS拡散と「私生活上の行為」の境界線'],
+    ['第2区　タイムの削り出し','あっせんにおける主張構造の転換'],
+    ['第2区　タスキの受け渡し','双方の面子を保つ「ウィンウィン」の譲歩案'],
+    ['第3区　激坂への挑戦','カスハラ事案の急展開タイムライン'],
+    ['第3区　複合的争点の等高線マップ','絡み合う4つの法的論点の解剖'],
+    ['第3区　ゴールテープへの最適ルート','「働き続けること」から逆算した解決パッケージ'],
+    ['競技ルール・インスペクション','失格（コースアウト）を避けるための倫理規定'],
+    ['知識と実務のタスキ','3区間を貫く本質：真のゴールからの逆算'],
+    ['フィニッシュライン','実務への実装と最新法規のアップデート']
+  ];
+  var N=SL.length, idx=0;
+  var img=document.getElementById('sl-img'), cap=document.getElementById('sl-cap'), num=document.getElementById('sl-n');
+  var prev=document.getElementById('sl-prev'), next=document.getElementById('sl-next'), thumbs=document.getElementById('thumbs');
+  function pad(n){ return (n<10?'0':'')+n; }
+  function esc(s){ return s.replace(/[&<>"]/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c];}); }
+  SL.forEach(function(s,i){
+    var b=document.createElement('button'); b.type='button';
+    b.setAttribute('aria-label', (i+1)+'枚目　'+s[0]);
+    b.innerHTML='<img src="slide-'+pad(i+1)+'-s.webp" width="320" height="179" alt=""><span class="tn">'+(i+1)+'</span>';
+    b.addEventListener('click', function(){ show(i); });
+    thumbs.appendChild(b);
+  });
+  var tBtns=[].slice.call(thumbs.children);
+  function preload(i){ if(i>=0&&i<N){ var im=new Image(); im.src='slide-'+pad(i+1)+'.webp'; } }
+  function show(i, fromKey){
+    idx=Math.max(0,Math.min(N-1,i));
+    img.src='slide-'+pad(idx+1)+'.webp';
+    img.alt=(idx+1)+'枚目：'+SL[idx][0]+'　'+SL[idx][1];
+    num.textContent=pad(idx+1);
+    cap.innerHTML=esc(SL[idx][0])+'<span>'+esc(SL[idx][1])+'</span>';
+    prev.disabled=idx===0; next.disabled=idx===N-1;
+    tBtns.forEach(function(b,k){ b.setAttribute('aria-current', k===idx?'true':'false'); });
+    var tb=tBtns[idx]; if(tb){ var L=tb.offsetLeft-thumbs.offsetLeft, W=thumbs.clientWidth; if(L<thumbs.scrollLeft||L+tb.offsetWidth>thumbs.scrollLeft+W){ thumbs.scrollTo({left:Math.max(0,L-W/2+tb.offsetWidth/2), behavior: reduce?'auto':'smooth'}); } }
+    preload(idx+1); preload(idx-1);
+  }
+  prev.addEventListener('click', function(){ show(idx-1); });
+  next.addEventListener('click', function(){ show(idx+1); });
+  var viewer=document.getElementById('viewer');
+  viewer.addEventListener('keydown', function(e){
+    if(e.target && /TEXTAREA|INPUT/.test(e.target.tagName)) return;
+    if(e.key==='ArrowRight'){ show(idx+1); e.preventDefault(); }
+    else if(e.key==='ArrowLeft'){ show(idx-1); e.preventDefault(); }
+  });
+  var stage=document.getElementById('stage'), sx=null, sy=null;
+  stage.addEventListener('pointerdown', function(e){ if(e.target.closest('button')) return; sx=e.clientX; sy=e.clientY; });
+  stage.addEventListener('pointerup', function(e){
+    if(sx===null) return; var dx=e.clientX-sx, dy=e.clientY-sy; sx=null;
+    if(Math.abs(dx)>40 && Math.abs(dx)>Math.abs(dy)){ show(idx+(dx<0?1:-1)); }
+  });
+  stage.addEventListener('pointercancel', function(){ sx=null; });
+  var full=document.getElementById('sl-full');
+  full.addEventListener('click', function(){
+    try{
+      if(document.fullscreenElement){ document.exitFullscreen(); }
+      else if(viewer.requestFullscreen){ var p=viewer.requestFullscreen(); if(p&&p.catch) p.catch(function(){ full.textContent='この画面では全画面にできません'; }); }
+      else { full.textContent='この画面では全画面にできません'; }
+    }catch(e){ full.textContent='この画面では全画面にできません'; }
+  });
+  document.addEventListener('fullscreenchange', function(){ full.textContent=document.fullscreenElement?'全画面を閉じる':'全画面で見る'; });
+  show(0);
+
+  /* ---- jumps from each 区 ---- */
+  [].forEach.call(document.querySelectorAll('[data-goto-video]'), function(b){ b.addEventListener('click', function(){
+    scrollToId('video'); playFrom(parseFloat(b.getAttribute('data-goto-video')));
+  }); });
+  [].forEach.call(document.querySelectorAll('[data-goto-slide]'), function(b){ b.addEventListener('click', function(){
+    show(parseInt(b.getAttribute('data-goto-slide'),10)-1); scrollToId('slides');
+    setTimeout(function(){ try{ viewer.focus({preventScroll:true}); }catch(e){} }, reduce?0:500);
+  }); });
+})();
+</script>
+
+</body>
+</html>
